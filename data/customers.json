@@ -1,345 +1,109 @@
 [
   {
     "customer_id": "CUST-0001",
-    "name": "Kari, Shan and Sahni",
+    "name": "Aryan Maharaj",
+    "segment": "individual",
+    "risk_profile": "low",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.24,
+    "language_preference": "hindi",
+    "preferred_channel": "sms",
+    "channel_success_rate": {
+      "sms": 0.71,
+      "email": 0.55,
+      "whatsapp": 0.14,
+      "voice_call": 0.31
+    }
+  },
+  {
+    "customer_id": "CUST-0002",
+    "name": "Kapoor and Sons",
     "segment": "business",
     "risk_profile": "high",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.02,
+    "payment_method_reliability": 0.56,
     "language_preference": "english",
-    "preferred_channel": "whatsapp",
+    "preferred_channel": "voice_call",
     "channel_success_rate": {
-      "sms": 0.46,
-      "email": 0.41,
-      "whatsapp": 0.72,
-      "voice_call": 0.59
+      "sms": 0.21,
+      "email": 0.39,
+      "whatsapp": 0.5,
+      "voice_call": 0.9
     },
     "gstin_present": true,
     "industry_type": "manufacturing",
     "business_size": "medium"
   },
   {
-    "customer_id": "CUST-0002",
-    "name": "Indali Bhattacharyya",
-    "segment": "individual",
-    "risk_profile": "high",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.6,
-    "language_preference": "english",
-    "preferred_channel": "sms",
-    "channel_success_rate": {
-      "sms": 0.72,
-      "email": 0.42,
-      "whatsapp": 0.42,
-      "voice_call": 0.56
-    }
-  },
-  {
     "customer_id": "CUST-0003",
-    "name": "Kalla, Dey and Gandhi",
+    "name": "Chaudry, Chahal and Sami",
     "segment": "business",
-    "risk_profile": "high",
+    "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.47,
+    "payment_method_reliability": 0.38,
     "language_preference": "english",
-    "preferred_channel": "voice_call",
+    "preferred_channel": "whatsapp",
     "channel_success_rate": {
-      "sms": 0.5,
-      "email": 0.46,
-      "whatsapp": 0.37,
-      "voice_call": 0.8
+      "sms": 0.52,
+      "email": 0.4,
+      "whatsapp": 0.83,
+      "voice_call": 0.46
     },
     "gstin_present": false,
-    "industry_type": "wholesale_trading",
+    "industry_type": "services_it",
     "business_size": "micro"
   },
   {
     "customer_id": "CUST-0004",
-    "name": "Pratyush Gour",
-    "segment": "individual",
+    "name": "Balan Inc",
+    "segment": "business",
     "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.28,
-    "language_preference": "english",
-    "preferred_channel": "email",
-    "channel_success_rate": {
-      "sms": 0.33,
-      "email": 0.85,
-      "whatsapp": 0.11,
-      "voice_call": 0.16
-    }
-  },
-  {
-    "customer_id": "CUST-0005",
-    "name": "Nagy and Sons",
-    "segment": "business",
-    "risk_profile": "high",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.5,
+    "payment_method_reliability": 0.62,
     "language_preference": "english",
     "preferred_channel": "whatsapp",
     "channel_success_rate": {
-      "sms": 0.5,
-      "email": 0.32,
-      "whatsapp": 0.88,
-      "voice_call": 0.39
+      "sms": 0.39,
+      "email": 0.45,
+      "whatsapp": 0.77,
+      "voice_call": 0.21
     },
     "gstin_present": true,
-    "industry_type": "restaurant_fnb",
-    "business_size": "medium"
-  },
-  {
-    "customer_id": "CUST-0006",
-    "name": "Darpan Brahmbhatt",
-    "segment": "individual",
-    "risk_profile": "medium",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.33,
-    "language_preference": "hinglish",
-    "preferred_channel": "whatsapp",
-    "channel_success_rate": {
-      "sms": 0.47,
-      "email": 0.39,
-      "whatsapp": 0.87,
-      "voice_call": 0.26
-    }
-  },
-  {
-    "customer_id": "CUST-0007",
-    "name": "Siddharth Rattan",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.52,
-    "language_preference": "hindi",
-    "preferred_channel": "email",
-    "channel_success_rate": {
-      "sms": 0.41,
-      "email": 0.84,
-      "whatsapp": 0.4,
-      "voice_call": 0.39
-    }
-  },
-  {
-    "customer_id": "CUST-0008",
-    "name": "Hegde, Anne and Swaminathan",
-    "segment": "business",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.53,
-    "language_preference": "english",
-    "preferred_channel": "sms",
-    "channel_success_rate": {
-      "sms": 0.75,
-      "email": 0.31,
-      "whatsapp": 0.47,
-      "voice_call": 0.1
-    },
-    "gstin_present": true,
-    "industry_type": "services_it",
+    "industry_type": "wholesale_trading",
     "business_size": "small"
   },
   {
-    "customer_id": "CUST-0009",
-    "name": "Faqid Raghavan",
-    "segment": "individual",
-    "risk_profile": "high",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.86,
-    "language_preference": "hinglish",
-    "preferred_channel": "voice_call",
-    "channel_success_rate": {
-      "sms": 0.46,
-      "email": 0.46,
-      "whatsapp": 0.29,
-      "voice_call": 0.79
-    }
-  },
-  {
-    "customer_id": "CUST-0010",
-    "name": "Dipta Dayal",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.8,
-    "language_preference": "hindi",
-    "preferred_channel": "sms",
-    "channel_success_rate": {
-      "sms": 0.89,
-      "email": 0.54,
-      "whatsapp": 0.17,
-      "voice_call": 0.34
-    }
-  },
-  {
-    "customer_id": "CUST-0011",
-    "name": "Amruta Rastogi",
-    "segment": "individual",
-    "risk_profile": "high",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.58,
-    "language_preference": "hindi",
-    "preferred_channel": "sms",
-    "channel_success_rate": {
-      "sms": 0.78,
-      "email": 0.41,
-      "whatsapp": 0.37,
-      "voice_call": 0.16
-    }
-  },
-  {
-    "customer_id": "CUST-0012",
-    "name": "Karan Group",
-    "segment": "business",
-    "risk_profile": "low",
-    "contact_opt_out": true,
-    "payment_method_reliability": 0.47,
-    "language_preference": "english",
-    "preferred_channel": "email",
-    "channel_success_rate": {
-      "sms": 0.41,
-      "email": 0.88,
-      "whatsapp": 0.32,
-      "voice_call": 0.3
-    },
-    "gstin_present": false,
-    "industry_type": "manufacturing",
-    "business_size": "micro"
-  },
-  {
-    "customer_id": "CUST-0013",
-    "name": "Girish Badami",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.94,
-    "language_preference": "hindi",
-    "preferred_channel": "email",
-    "channel_success_rate": {
-      "sms": 0.2,
-      "email": 0.85,
-      "whatsapp": 0.36,
-      "voice_call": 0.52
-    }
-  },
-  {
-    "customer_id": "CUST-0014",
-    "name": "Ishanvi Raval",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.75,
-    "language_preference": "english",
-    "preferred_channel": "email",
-    "channel_success_rate": {
-      "sms": 0.42,
-      "email": 0.82,
-      "whatsapp": 0.19,
-      "voice_call": 0.28
-    }
-  },
-  {
-    "customer_id": "CUST-0015",
-    "name": "Grover, Dhaliwal and Kibe",
+    "customer_id": "CUST-0005",
+    "name": "Kaul PLC",
     "segment": "business",
     "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.75,
+    "payment_method_reliability": 0.36,
     "language_preference": "english",
-    "preferred_channel": "email",
+    "preferred_channel": "whatsapp",
     "channel_success_rate": {
-      "sms": 0.22,
-      "email": 0.85,
-      "whatsapp": 0.57,
-      "voice_call": 0.23
+      "sms": 0.28,
+      "email": 0.44,
+      "whatsapp": 0.72,
+      "voice_call": 0.44
     },
     "gstin_present": true,
     "industry_type": "restaurant_fnb",
-    "business_size": "medium"
-  },
-  {
-    "customer_id": "CUST-0016",
-    "name": "Saksham Mani",
-    "segment": "individual",
-    "risk_profile": "medium",
-    "contact_opt_out": true,
-    "payment_method_reliability": 0.6,
-    "language_preference": "hinglish",
-    "preferred_channel": "whatsapp",
-    "channel_success_rate": {
-      "sms": 0.31,
-      "email": 0.48,
-      "whatsapp": 0.93,
-      "voice_call": 0.42
-    }
-  },
-  {
-    "customer_id": "CUST-0017",
-    "name": "Subramanian Inc",
-    "segment": "business",
-    "risk_profile": "medium",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.16,
-    "language_preference": "english",
-    "preferred_channel": "email",
-    "channel_success_rate": {
-      "sms": 0.26,
-      "email": 0.85,
-      "whatsapp": 0.4,
-      "voice_call": 0.17
-    },
-    "gstin_present": false,
-    "industry_type": "services_it",
-    "business_size": "micro"
-  },
-  {
-    "customer_id": "CUST-0018",
-    "name": "D\u2019Alia, Mukhopadhyay and Trivedi",
-    "segment": "business",
-    "risk_profile": "medium",
-    "contact_opt_out": true,
-    "payment_method_reliability": 0.11,
-    "language_preference": "english",
-    "preferred_channel": "voice_call",
-    "channel_success_rate": {
-      "sms": 0.57,
-      "email": 0.35,
-      "whatsapp": 0.17,
-      "voice_call": 0.93
-    },
-    "gstin_present": true,
-    "industry_type": "services_it",
     "business_size": "large"
   },
   {
-    "customer_id": "CUST-0019",
-    "name": "Luke Dhaliwal",
-    "segment": "individual",
+    "customer_id": "CUST-0006",
+    "name": "Bala, Issac and Saini",
+    "segment": "business",
     "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.83,
+    "payment_method_reliability": 0.99,
     "language_preference": "english",
-    "preferred_channel": "whatsapp",
+    "preferred_channel": "email",
     "channel_success_rate": {
-      "sms": 0.59,
-      "email": 0.38,
-      "whatsapp": 0.81,
-      "voice_call": 0.23
-    }
-  },
-  {
-    "customer_id": "CUST-0020",
-    "name": "Sangha Ltd",
-    "segment": "business",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.56,
-    "language_preference": "english",
-    "preferred_channel": "sms",
-    "channel_success_rate": {
-      "sms": 0.88,
-      "email": 0.18,
-      "whatsapp": 0.39,
+      "sms": 0.44,
+      "email": 0.71,
+      "whatsapp": 0.49,
       "voice_call": 0.21
     },
     "gstin_present": true,
@@ -347,191 +111,439 @@
     "business_size": "small"
   },
   {
-    "customer_id": "CUST-0021",
-    "name": "Inaya Shah",
-    "segment": "individual",
+    "customer_id": "CUST-0007",
+    "name": "Sen PLC",
+    "segment": "business",
     "risk_profile": "high",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.94,
+    "payment_method_reliability": 0.31,
     "language_preference": "english",
-    "preferred_channel": "email",
-    "channel_success_rate": {
-      "sms": 0.55,
-      "email": 0.95,
-      "whatsapp": 0.38,
-      "voice_call": 0.28
-    }
-  },
-  {
-    "customer_id": "CUST-0022",
-    "name": "Pahal Rama",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.29,
-    "language_preference": "hinglish",
     "preferred_channel": "voice_call",
     "channel_success_rate": {
-      "sms": 0.39,
-      "email": 0.58,
-      "whatsapp": 0.23,
-      "voice_call": 0.75
-    }
-  },
-  {
-    "customer_id": "CUST-0023",
-    "name": "Brahmbhatt, Suresh and Sidhu",
-    "segment": "business",
-    "risk_profile": "high",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.59,
-    "language_preference": "english",
-    "preferred_channel": "whatsapp",
-    "channel_success_rate": {
-      "sms": 0.25,
-      "email": 0.44,
-      "whatsapp": 0.81,
-      "voice_call": 0.26
-    },
-    "gstin_present": false,
-    "industry_type": "services_it",
-    "business_size": "micro"
-  },
-  {
-    "customer_id": "CUST-0024",
-    "name": "Chaitanya Lal",
-    "segment": "individual",
-    "risk_profile": "medium",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.1,
-    "language_preference": "hinglish",
-    "preferred_channel": "whatsapp",
-    "channel_success_rate": {
-      "sms": 0.22,
-      "email": 0.4,
-      "whatsapp": 0.89,
-      "voice_call": 0.43
-    }
-  },
-  {
-    "customer_id": "CUST-0025",
-    "name": "Thomas Dasgupta",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.26,
-    "language_preference": "english",
-    "preferred_channel": "email",
-    "channel_success_rate": {
-      "sms": 0.15,
-      "email": 0.89,
-      "whatsapp": 0.23,
-      "voice_call": 0.51
-    }
-  },
-  {
-    "customer_id": "CUST-0026",
-    "name": "Mugdha Sarma",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.48,
-    "language_preference": "hindi",
-    "preferred_channel": "whatsapp",
-    "channel_success_rate": {
-      "sms": 0.29,
-      "email": 0.47,
-      "whatsapp": 0.7,
-      "voice_call": 0.35
-    }
-  },
-  {
-    "customer_id": "CUST-0027",
-    "name": "Lohit Pant",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.4,
-    "language_preference": "hinglish",
-    "preferred_channel": "sms",
-    "channel_success_rate": {
-      "sms": 0.76,
-      "email": 0.52,
-      "whatsapp": 0.12,
-      "voice_call": 0.54
-    }
-  },
-  {
-    "customer_id": "CUST-0028",
-    "name": "Kaul LLC",
-    "segment": "business",
-    "risk_profile": "high",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.84,
-    "language_preference": "english",
-    "preferred_channel": "sms",
-    "channel_success_rate": {
-      "sms": 0.73,
-      "email": 0.45,
+      "sms": 0.3,
+      "email": 0.56,
       "whatsapp": 0.33,
-      "voice_call": 0.34
+      "voice_call": 0.76
     },
     "gstin_present": true,
-    "industry_type": "restaurant_fnb",
-    "business_size": "small"
+    "industry_type": "manufacturing",
+    "business_size": "large"
   },
   {
-    "customer_id": "CUST-0029",
-    "name": "Sule-Chad",
-    "segment": "business",
+    "customer_id": "CUST-0008",
+    "name": "Abeer Dutta",
+    "segment": "individual",
+    "risk_profile": "high",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.22,
+    "language_preference": "hindi",
+    "preferred_channel": "voice_call",
+    "channel_success_rate": {
+      "sms": 0.15,
+      "email": 0.12,
+      "whatsapp": 0.15,
+      "voice_call": 0.9
+    }
+  },
+  {
+    "customer_id": "CUST-0009",
+    "name": "Harini Mall",
+    "segment": "individual",
+    "risk_profile": "low",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.6,
+    "language_preference": "english",
+    "preferred_channel": "whatsapp",
+    "channel_success_rate": {
+      "sms": 0.59,
+      "email": 0.53,
+      "whatsapp": 0.87,
+      "voice_call": 0.46
+    }
+  },
+  {
+    "customer_id": "CUST-0010",
+    "name": "Tanveer Nayar",
+    "segment": "individual",
     "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.36,
+    "payment_method_reliability": 0.34,
+    "language_preference": "english",
+    "preferred_channel": "voice_call",
+    "channel_success_rate": {
+      "sms": 0.18,
+      "email": 0.1,
+      "whatsapp": 0.46,
+      "voice_call": 0.94
+    }
+  },
+  {
+    "customer_id": "CUST-0011",
+    "name": "George Rai",
+    "segment": "individual",
+    "risk_profile": "high",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.87,
     "language_preference": "english",
     "preferred_channel": "email",
     "channel_success_rate": {
       "sms": 0.18,
-      "email": 0.74,
-      "whatsapp": 0.16,
-      "voice_call": 0.22
-    },
-    "gstin_present": false,
-    "industry_type": "ecommerce_seller",
-    "business_size": "micro"
+      "email": 0.83,
+      "whatsapp": 0.37,
+      "voice_call": 0.49
+    }
   },
   {
-    "customer_id": "CUST-0030",
-    "name": "Tailor-Hayer",
+    "customer_id": "CUST-0012",
+    "name": "Parmer LLC",
     "segment": "business",
-    "risk_profile": "high",
+    "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.36,
+    "payment_method_reliability": 0.11,
     "language_preference": "english",
     "preferred_channel": "whatsapp",
     "channel_success_rate": {
-      "sms": 0.29,
-      "email": 0.22,
-      "whatsapp": 0.75,
-      "voice_call": 0.3
+      "sms": 0.54,
+      "email": 0.52,
+      "whatsapp": 0.92,
+      "voice_call": 0.13
+    },
+    "gstin_present": false,
+    "industry_type": "retail_kirana",
+    "business_size": "micro"
+  },
+  {
+    "customer_id": "CUST-0013",
+    "name": "Caleb Sharaf",
+    "segment": "individual",
+    "risk_profile": "low",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.53,
+    "language_preference": "hindi",
+    "preferred_channel": "email",
+    "channel_success_rate": {
+      "sms": 0.43,
+      "email": 0.85,
+      "whatsapp": 0.18,
+      "voice_call": 0.36
+    }
+  },
+  {
+    "customer_id": "CUST-0014",
+    "name": "Kritika Brar",
+    "segment": "individual",
+    "risk_profile": "high",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.69,
+    "language_preference": "hinglish",
+    "preferred_channel": "whatsapp",
+    "channel_success_rate": {
+      "sms": 0.3,
+      "email": 0.44,
+      "whatsapp": 0.81,
+      "voice_call": 0.55
+    }
+  },
+  {
+    "customer_id": "CUST-0015",
+    "name": "Memon, Pathak and Handa",
+    "segment": "business",
+    "risk_profile": "low",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.59,
+    "language_preference": "english",
+    "preferred_channel": "email",
+    "channel_success_rate": {
+      "sms": 0.39,
+      "email": 0.72,
+      "whatsapp": 0.45,
+      "voice_call": 0.13
+    },
+    "gstin_present": true,
+    "industry_type": "manufacturing",
+    "business_size": "small"
+  },
+  {
+    "customer_id": "CUST-0016",
+    "name": "Chakradev Kari",
+    "segment": "individual",
+    "risk_profile": "medium",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.21,
+    "language_preference": "hindi",
+    "preferred_channel": "voice_call",
+    "channel_success_rate": {
+      "sms": 0.22,
+      "email": 0.34,
+      "whatsapp": 0.3,
+      "voice_call": 0.86
+    }
+  },
+  {
+    "customer_id": "CUST-0017",
+    "name": "Buch-Kaul",
+    "segment": "business",
+    "risk_profile": "medium",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.73,
+    "language_preference": "english",
+    "preferred_channel": "sms",
+    "channel_success_rate": {
+      "sms": 0.75,
+      "email": 0.46,
+      "whatsapp": 0.5,
+      "voice_call": 0.15
+    },
+    "gstin_present": true,
+    "industry_type": "wholesale_trading",
+    "business_size": "medium"
+  },
+  {
+    "customer_id": "CUST-0018",
+    "name": "Rai LLC",
+    "segment": "business",
+    "risk_profile": "medium",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.92,
+    "language_preference": "english",
+    "preferred_channel": "voice_call",
+    "channel_success_rate": {
+      "sms": 0.5,
+      "email": 0.53,
+      "whatsapp": 0.15,
+      "voice_call": 0.84
+    },
+    "gstin_present": true,
+    "industry_type": "retail_kirana",
+    "business_size": "small"
+  },
+  {
+    "customer_id": "CUST-0019",
+    "name": "Patla-Gaba",
+    "segment": "business",
+    "risk_profile": "medium",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.86,
+    "language_preference": "english",
+    "preferred_channel": "sms",
+    "channel_success_rate": {
+      "sms": 0.9,
+      "email": 0.1,
+      "whatsapp": 0.3,
+      "voice_call": 0.56
     },
     "gstin_present": true,
     "industry_type": "ecommerce_seller",
     "business_size": "large"
   },
   {
-    "customer_id": "CUST-0031",
-    "name": "Raja-Varma",
+    "customer_id": "CUST-0020",
+    "name": "Isha Kadakia",
+    "segment": "individual",
+    "risk_profile": "high",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.49,
+    "language_preference": "hindi",
+    "preferred_channel": "whatsapp",
+    "channel_success_rate": {
+      "sms": 0.21,
+      "email": 0.13,
+      "whatsapp": 0.78,
+      "voice_call": 0.13
+    }
+  },
+  {
+    "customer_id": "CUST-0021",
+    "name": "Loke, Bora and Garg",
     "segment": "business",
     "risk_profile": "medium",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.85,
+    "language_preference": "english",
+    "preferred_channel": "email",
+    "channel_success_rate": {
+      "sms": 0.13,
+      "email": 0.72,
+      "whatsapp": 0.53,
+      "voice_call": 0.13
+    },
+    "gstin_present": false,
+    "industry_type": "services_it",
+    "business_size": "micro"
+  },
+  {
+    "customer_id": "CUST-0022",
+    "name": "Konda, Gade and Shere",
+    "segment": "business",
+    "risk_profile": "high",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.59,
+    "language_preference": "english",
+    "preferred_channel": "sms",
+    "channel_success_rate": {
+      "sms": 0.75,
+      "email": 0.39,
+      "whatsapp": 0.36,
+      "voice_call": 0.57
+    },
+    "gstin_present": false,
+    "industry_type": "wholesale_trading",
+    "business_size": "micro"
+  },
+  {
+    "customer_id": "CUST-0023",
+    "name": "Madan-Kanda",
+    "segment": "business",
+    "risk_profile": "low",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.3,
+    "language_preference": "english",
+    "preferred_channel": "whatsapp",
+    "channel_success_rate": {
+      "sms": 0.56,
+      "email": 0.57,
+      "whatsapp": 0.84,
+      "voice_call": 0.41
+    },
+    "gstin_present": true,
+    "industry_type": "restaurant_fnb",
+    "business_size": "small"
+  },
+  {
+    "customer_id": "CUST-0024",
+    "name": "Daksh Karnik",
+    "segment": "individual",
+    "risk_profile": "low",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.88,
+    "language_preference": "hindi",
+    "preferred_channel": "whatsapp",
+    "channel_success_rate": {
+      "sms": 0.24,
+      "email": 0.32,
+      "whatsapp": 0.95,
+      "voice_call": 0.25
+    }
+  },
+  {
+    "customer_id": "CUST-0025",
+    "name": "Diya Rattan",
+    "segment": "individual",
+    "risk_profile": "high",
     "contact_opt_out": true,
-    "payment_method_reliability": 0.39,
+    "payment_method_reliability": 0.82,
+    "language_preference": "english",
+    "preferred_channel": "sms",
+    "channel_success_rate": {
+      "sms": 0.84,
+      "email": 0.17,
+      "whatsapp": 0.16,
+      "voice_call": 0.15
+    }
+  },
+  {
+    "customer_id": "CUST-0026",
+    "name": "Bhatti-Kakar",
+    "segment": "business",
+    "risk_profile": "high",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.34,
     "language_preference": "english",
     "preferred_channel": "voice_call",
     "channel_success_rate": {
       "sms": 0.35,
-      "email": 0.46,
-      "whatsapp": 0.36,
-      "voice_call": 0.79
+      "email": 0.23,
+      "whatsapp": 0.55,
+      "voice_call": 0.86
+    },
+    "gstin_present": false,
+    "industry_type": "retail_kirana",
+    "business_size": "micro"
+  },
+  {
+    "customer_id": "CUST-0027",
+    "name": "Murty, Kala and Tata",
+    "segment": "business",
+    "risk_profile": "low",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.26,
+    "language_preference": "english",
+    "preferred_channel": "voice_call",
+    "channel_success_rate": {
+      "sms": 0.38,
+      "email": 0.31,
+      "whatsapp": 0.1,
+      "voice_call": 0.92
+    },
+    "gstin_present": false,
+    "industry_type": "restaurant_fnb",
+    "business_size": "micro"
+  },
+  {
+    "customer_id": "CUST-0028",
+    "name": "Shanker-Dhar",
+    "segment": "business",
+    "risk_profile": "medium",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.15,
+    "language_preference": "english",
+    "preferred_channel": "email",
+    "channel_success_rate": {
+      "sms": 0.12,
+      "email": 0.71,
+      "whatsapp": 0.57,
+      "voice_call": 0.59
+    },
+    "gstin_present": true,
+    "industry_type": "ecommerce_seller",
+    "business_size": "small"
+  },
+  {
+    "customer_id": "CUST-0029",
+    "name": "Liam Koshy",
+    "segment": "individual",
+    "risk_profile": "medium",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.88,
+    "language_preference": "english",
+    "preferred_channel": "email",
+    "channel_success_rate": {
+      "sms": 0.56,
+      "email": 0.74,
+      "whatsapp": 0.18,
+      "voice_call": 0.5
+    }
+  },
+  {
+    "customer_id": "CUST-0030",
+    "name": "Priya Rastogi",
+    "segment": "individual",
+    "risk_profile": "low",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.33,
+    "language_preference": "english",
+    "preferred_channel": "email",
+    "channel_success_rate": {
+      "sms": 0.23,
+      "email": 0.91,
+      "whatsapp": 0.15,
+      "voice_call": 0.54
+    }
+  },
+  {
+    "customer_id": "CUST-0031",
+    "name": "Kanda-Devi",
+    "segment": "business",
+    "risk_profile": "medium",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.82,
+    "language_preference": "english",
+    "preferred_channel": "email",
+    "channel_success_rate": {
+      "sms": 0.21,
+      "email": 0.72,
+      "whatsapp": 0.3,
+      "voice_call": 0.24
     },
     "gstin_present": false,
     "industry_type": "manufacturing",
@@ -539,146 +551,152 @@
   },
   {
     "customer_id": "CUST-0032",
-    "name": "Oliver Gola",
+    "name": "Gavin Batta",
     "segment": "individual",
-    "risk_profile": "low",
+    "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.04,
+    "payment_method_reliability": 0.84,
     "language_preference": "english",
-    "preferred_channel": "voice_call",
+    "preferred_channel": "sms",
     "channel_success_rate": {
-      "sms": 0.34,
-      "email": 0.3,
-      "whatsapp": 0.12,
-      "voice_call": 0.85
+      "sms": 0.77,
+      "email": 0.59,
+      "whatsapp": 0.19,
+      "voice_call": 0.58
     }
   },
   {
     "customer_id": "CUST-0033",
-    "name": "Hiral Bumb",
-    "segment": "individual",
-    "risk_profile": "low",
+    "name": "Dua Ltd",
+    "segment": "business",
+    "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.05,
-    "language_preference": "hindi",
-    "preferred_channel": "sms",
+    "payment_method_reliability": 0.79,
+    "language_preference": "english",
+    "preferred_channel": "voice_call",
     "channel_success_rate": {
-      "sms": 0.92,
-      "email": 0.38,
-      "whatsapp": 0.44,
-      "voice_call": 0.6
-    }
+      "sms": 0.4,
+      "email": 0.36,
+      "whatsapp": 0.29,
+      "voice_call": 0.76
+    },
+    "gstin_present": false,
+    "industry_type": "retail_kirana",
+    "business_size": "micro"
   },
   {
     "customer_id": "CUST-0034",
-    "name": "Rohan Kumer",
+    "name": "Pahal Bhatt",
     "segment": "individual",
-    "risk_profile": "medium",
+    "risk_profile": "high",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.01,
+    "payment_method_reliability": 0.94,
     "language_preference": "hinglish",
-    "preferred_channel": "sms",
+    "preferred_channel": "email",
     "channel_success_rate": {
-      "sms": 0.85,
-      "email": 0.56,
-      "whatsapp": 0.37,
-      "voice_call": 0.24
+      "sms": 0.28,
+      "email": 0.78,
+      "whatsapp": 0.43,
+      "voice_call": 0.27
     }
   },
   {
     "customer_id": "CUST-0035",
-    "name": "Ekani Saha",
+    "name": "Lakshmi Sidhu",
     "segment": "individual",
     "risk_profile": "high",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.11,
-    "language_preference": "hindi",
+    "payment_method_reliability": 0.51,
+    "language_preference": "hinglish",
     "preferred_channel": "voice_call",
     "channel_success_rate": {
       "sms": 0.26,
-      "email": 0.31,
-      "whatsapp": 0.26,
-      "voice_call": 0.88
+      "email": 0.45,
+      "whatsapp": 0.38,
+      "voice_call": 0.87
     }
   },
   {
     "customer_id": "CUST-0036",
-    "name": "Chavvi Mani",
-    "segment": "individual",
-    "risk_profile": "medium",
+    "name": "Krishnamurthy, Apte and Contractor",
+    "segment": "business",
+    "risk_profile": "high",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.26,
-    "language_preference": "hindi",
-    "preferred_channel": "email",
+    "payment_method_reliability": 0.62,
+    "language_preference": "english",
+    "preferred_channel": "whatsapp",
     "channel_success_rate": {
-      "sms": 0.39,
-      "email": 0.8,
-      "whatsapp": 0.17,
-      "voice_call": 0.24
-    }
+      "sms": 0.3,
+      "email": 0.52,
+      "whatsapp": 0.9,
+      "voice_call": 0.21
+    },
+    "gstin_present": true,
+    "industry_type": "manufacturing",
+    "business_size": "medium"
   },
   {
     "customer_id": "CUST-0037",
-    "name": "Madhavi Lalla",
+    "name": "Harini Choudhury",
     "segment": "individual",
     "risk_profile": "high",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.08,
+    "payment_method_reliability": 0.47,
     "language_preference": "hinglish",
-    "preferred_channel": "whatsapp",
+    "preferred_channel": "email",
     "channel_success_rate": {
-      "sms": 0.38,
-      "email": 0.45,
-      "whatsapp": 0.72,
-      "voice_call": 0.24
-    }
-  },
-  {
-    "customer_id": "CUST-0038",
-    "name": "Mohini Bawa",
-    "segment": "individual",
-    "risk_profile": "low",
-    "contact_opt_out": false,
-    "payment_method_reliability": 0.39,
-    "language_preference": "hinglish",
-    "preferred_channel": "whatsapp",
-    "channel_success_rate": {
-      "sms": 0.37,
-      "email": 0.14,
-      "whatsapp": 0.88,
+      "sms": 0.43,
+      "email": 0.72,
+      "whatsapp": 0.43,
       "voice_call": 0.41
     }
   },
   {
-    "customer_id": "CUST-0039",
-    "name": "Jeevika Parikh",
+    "customer_id": "CUST-0038",
+    "name": "Radhika Dugar",
     "segment": "individual",
-    "risk_profile": "medium",
+    "risk_profile": "low",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.48,
+    "payment_method_reliability": 0.22,
     "language_preference": "hindi",
-    "preferred_channel": "sms",
+    "preferred_channel": "email",
     "channel_success_rate": {
-      "sms": 0.84,
-      "email": 0.2,
-      "whatsapp": 0.31,
-      "voice_call": 0.54
+      "sms": 0.11,
+      "email": 0.72,
+      "whatsapp": 0.34,
+      "voice_call": 0.52
+    }
+  },
+  {
+    "customer_id": "CUST-0039",
+    "name": "Aarush Lall",
+    "segment": "individual",
+    "risk_profile": "high",
+    "contact_opt_out": false,
+    "payment_method_reliability": 0.72,
+    "language_preference": "english",
+    "preferred_channel": "voice_call",
+    "channel_success_rate": {
+      "sms": 0.3,
+      "email": 0.17,
+      "whatsapp": 0.44,
+      "voice_call": 0.92
     }
   },
   {
     "customer_id": "CUST-0040",
-    "name": "Reyansh Doshi",
+    "name": "Yashica Cherian",
     "segment": "individual",
     "risk_profile": "medium",
     "contact_opt_out": false,
-    "payment_method_reliability": 0.61,
+    "payment_method_reliability": 0.8,
     "language_preference": "hinglish",
     "preferred_channel": "voice_call",
     "channel_success_rate": {
-      "sms": 0.26,
-      "email": 0.15,
-      "whatsapp": 0.55,
-      "voice_call": 0.73
+      "sms": 0.13,
+      "email": 0.22,
+      "whatsapp": 0.52,
+      "voice_call": 0.9
     }
   }
 ]

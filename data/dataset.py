@@ -5,6 +5,8 @@ from datetime import datetime, timedelta
 from faker import Faker
 
 fake = Faker('en_IN')
+Faker.seed(42)
+random.seed(42)
 NOW = datetime(2026, 8, 25, 10, 0, 0)
 
 def generate_data():

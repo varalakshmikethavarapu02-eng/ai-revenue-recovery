@@ -40,7 +40,13 @@ Guardrails (retry caps, opt-out, stopping rules) → Audit Trail + Streamlit Das
   - Final dataset: 174 events (169 numbered + 5 edge cases), 40 customers, 
     data/customers.json + data/sample_data.json
   - VERIFIED correct, committed
-- Day 3 (26/08): Detection Agent — [update when done]
+- - Day 3 (26/08): Detection Agent — DONE
+  - agents/detection_agent.py built, rule-based flagging per event_type
+  - Found & patched Day 2 dataset gap: retry_count was missing (all None) for 
+    all 51 subscription_failed events — added realistic 0-4 distribution
+  - Verified: 166/174 flagged, 1 skipped (₹0 edge case), 3 warnings 
+    (duplicate ID, orphan customer, null timestamp), all 5 edge cases confirmed handled
+  - Output: data/flagged_events.json
 
 ## Current blocker (if any)
 None currently.
