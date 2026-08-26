@@ -20,7 +20,7 @@ DIAGNOSED_EVENTS_FILE = "data/diagnosed_events.json"
 
 # Configure Gemini
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
-model = genai.GenerativeModel("gemini-3.6-flash")
+model = genai.GenerativeModel("gemini-flash-lite-latest")
 
 def load_json(file_path: str) -> Any:
     if not os.path.exists(file_path):
