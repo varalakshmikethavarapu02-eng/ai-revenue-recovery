@@ -1,0 +1,1668 @@
+[
+  {
+    "event_id": "EVT-0001",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0019",
+    "amount": 7039,
+    "priority_score": 40.63,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0002",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0014",
+    "amount": 6373,
+    "priority_score": 41.77,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0003",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0023",
+    "amount": 37721,
+    "priority_score": 77.68,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0004",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0008",
+    "amount": 30442,
+    "priority_score": 33.52,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0005",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0005",
+    "amount": 32438,
+    "priority_score": 53.45,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0006",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0018",
+    "amount": 48042,
+    "priority_score": 79.27,
+    "contact_opt_out": true,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0007",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0039",
+    "amount": 45005,
+    "priority_score": 64.34,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0008",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0004",
+    "amount": 33539,
+    "priority_score": 44.33,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0009",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0011",
+    "amount": 46974,
+    "priority_score": 80.08,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0010",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0011",
+    "amount": 34019,
+    "priority_score": 50.55,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0011",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0011",
+    "amount": 13439,
+    "priority_score": 66.58,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0012",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0023",
+    "amount": 18280,
+    "priority_score": 42.96,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0013",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0025",
+    "amount": 7333,
+    "priority_score": 40.87,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0014",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0014",
+    "amount": 3688,
+    "priority_score": 26.28,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0015",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0001",
+    "amount": 32315,
+    "priority_score": 75.02,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0016",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0022",
+    "amount": 14514,
+    "priority_score": 25.78,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0017",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0021",
+    "amount": 34672,
+    "priority_score": 79.4,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0018",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0031",
+    "amount": 41646,
+    "priority_score": 61.65,
+    "contact_opt_out": true,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0019",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0004",
+    "amount": 33411,
+    "priority_score": 45.06,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0020",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0007",
+    "amount": 11057,
+    "priority_score": 26.35,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0021",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0022",
+    "amount": 8455,
+    "priority_score": 47.6,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0022",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0037",
+    "amount": 30043,
+    "priority_score": 46.53,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0023",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0023",
+    "amount": 22515,
+    "priority_score": 46.35,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0024",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0035",
+    "amount": 11628,
+    "priority_score": 32.64,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0025",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0023",
+    "amount": 13623,
+    "priority_score": 56.73,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0026",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0036",
+    "amount": 48978,
+    "priority_score": 82.52,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0027",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0001",
+    "amount": 20277,
+    "priority_score": 42.05,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0028",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0018",
+    "amount": 24710,
+    "priority_score": 43.93,
+    "contact_opt_out": true,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0029",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0008",
+    "amount": 32718,
+    "priority_score": 53.67,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0030",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0013",
+    "amount": 18875,
+    "priority_score": 38.43,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0031",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0008",
+    "amount": 23006,
+    "priority_score": 46.74,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0032",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0012",
+    "amount": 38175,
+    "priority_score": 50.54,
+    "contact_opt_out": true,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0033",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0018",
+    "amount": 5358,
+    "priority_score": 50.95,
+    "contact_opt_out": true,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0034",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0032",
+    "amount": 37714,
+    "priority_score": 68.5,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0035",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0038",
+    "amount": 12901,
+    "priority_score": 31.15,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0036",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0034",
+    "amount": 44024,
+    "priority_score": 56.05,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0037",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0026",
+    "amount": 13239,
+    "priority_score": 33.92,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0038",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0001",
+    "amount": 17605,
+    "priority_score": 54.08,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0039",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0025",
+    "amount": 5158,
+    "priority_score": 29.96,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0040",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0009",
+    "amount": 31077,
+    "priority_score": 64.86,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0041",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0010",
+    "amount": 2699,
+    "priority_score": 28.83,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0042",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0009",
+    "amount": 1943,
+    "priority_score": 44.89,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0043",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0009",
+    "amount": 3232,
+    "priority_score": 59.25,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0044",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0006",
+    "amount": 7698,
+    "priority_score": 44.49,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0045",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0014",
+    "amount": 9400,
+    "priority_score": 24.19,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0046",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0033",
+    "amount": 1993,
+    "priority_score": 16.59,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0047",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0034",
+    "amount": 4177,
+    "priority_score": 36.67,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0048",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0024",
+    "amount": 3161,
+    "priority_score": 30.86,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0049",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0011",
+    "amount": 2053,
+    "priority_score": 29.98,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0050",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0019",
+    "amount": 668,
+    "priority_score": 15.53,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0051",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0032",
+    "amount": 6970,
+    "priority_score": 15.58,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0052",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0039",
+    "amount": 4182,
+    "priority_score": 51.68,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0053",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0038",
+    "amount": 5300,
+    "priority_score": 37.57,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0054",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0027",
+    "amount": 2209,
+    "priority_score": 13.43,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0055",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0036",
+    "amount": 7738,
+    "priority_score": 27.86,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0056",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0031",
+    "amount": 9360,
+    "priority_score": 19.15,
+    "contact_opt_out": true,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0057",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0025",
+    "amount": 2965,
+    "priority_score": 20.71,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0058",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0025",
+    "amount": 514,
+    "priority_score": 8.74,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0059",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0033",
+    "amount": 2104,
+    "priority_score": 16.68,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0060",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0013",
+    "amount": 8410,
+    "priority_score": 16.73,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0061",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0022",
+    "amount": 8014,
+    "priority_score": 26.41,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0062",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0013",
+    "amount": 5172,
+    "priority_score": 29.14,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0063",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0037",
+    "amount": 3549,
+    "priority_score": 32.84,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0064",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0001",
+    "amount": 9903,
+    "priority_score": 57.92,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0065",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0004",
+    "amount": 2619,
+    "priority_score": 43.76,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0066",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0008",
+    "amount": 9331,
+    "priority_score": 19.13,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0067",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0027",
+    "amount": 7569,
+    "priority_score": 47.72,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0068",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0023",
+    "amount": 2329,
+    "priority_score": 55.2,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0069",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0016",
+    "amount": 9865,
+    "priority_score": 46.23,
+    "contact_opt_out": true,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0070",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0009",
+    "amount": 6314,
+    "priority_score": 50.05,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0071",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0029",
+    "amount": 8605,
+    "priority_score": 46.88,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0072",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0007",
+    "amount": 8111,
+    "priority_score": 26.49,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0073",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0019",
+    "amount": 3309,
+    "priority_score": 29.31,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0074",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0019",
+    "amount": 7941,
+    "priority_score": 34.69,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0075",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0010",
+    "amount": 1327,
+    "priority_score": 34.39,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0076",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0033",
+    "amount": 8377,
+    "priority_score": 16.7,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0077",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0004",
+    "amount": 7828,
+    "priority_score": 34.6,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0078",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0017",
+    "amount": 744,
+    "priority_score": 23.93,
+    "contact_opt_out": false,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0079",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0031",
+    "amount": 2503,
+    "priority_score": 27.0,
+    "contact_opt_out": true,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0080",
+    "event_type": "checkout_abandoned",
+    "customer_id": "CUST-0018",
+    "amount": 6749,
+    "priority_score": 35.4,
+    "contact_opt_out": true,
+    "flag_reason": "Within 24h urgency window",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0081",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0015",
+    "amount": 533,
+    "priority_score": 34.32,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0083",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0039",
+    "amount": 891,
+    "priority_score": 32.94,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0084",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0010",
+    "amount": 281,
+    "priority_score": 30.78,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0085",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0026",
+    "amount": 724,
+    "priority_score": 36.69,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0086",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0025",
+    "amount": 420,
+    "priority_score": 15.34,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0087",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0037",
+    "amount": 815,
+    "priority_score": 46.21,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0088",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0008",
+    "amount": 922,
+    "priority_score": 27.96,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0089",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0006",
+    "amount": 902,
+    "priority_score": 38.5,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0090",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0030",
+    "amount": 345,
+    "priority_score": 50.28,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0091",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0011",
+    "amount": 962,
+    "priority_score": 45.77,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0092",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0035",
+    "amount": 842,
+    "priority_score": 48.45,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0093",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0011",
+    "amount": 554,
+    "priority_score": 52.67,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0095",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0013",
+    "amount": 345,
+    "priority_score": 11.94,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0096",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0033",
+    "amount": 489,
+    "priority_score": 13.17,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0097",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0038",
+    "amount": 501,
+    "priority_score": 12.62,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0098",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0016",
+    "amount": 456,
+    "priority_score": 25.36,
+    "contact_opt_out": true,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0099",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0016",
+    "amount": 125,
+    "priority_score": 23.43,
+    "contact_opt_out": true,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0100",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0021",
+    "amount": 861,
+    "priority_score": 55.13,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0101",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0027",
+    "amount": 425,
+    "priority_score": 40.34,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0102",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0030",
+    "amount": 529,
+    "priority_score": 53.2,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0103",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0016",
+    "amount": 116,
+    "priority_score": 36.2,
+    "contact_opt_out": true,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0105",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0014",
+    "amount": 713,
+    "priority_score": 9.46,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0107",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0032",
+    "amount": 387,
+    "priority_score": 6.98,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0108",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0002",
+    "amount": 701,
+    "priority_score": 22.23,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0109",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0021",
+    "amount": 492,
+    "priority_score": 41.5,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0111",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0019",
+    "amount": 318,
+    "priority_score": 44.7,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0112",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0030",
+    "amount": 228,
+    "priority_score": 20.74,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0113",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0037",
+    "amount": 179,
+    "priority_score": 44.03,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0114",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0029",
+    "amount": 206,
+    "priority_score": 47.39,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0115",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0038",
+    "amount": 835,
+    "priority_score": 17.89,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0116",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0001",
+    "amount": 776,
+    "priority_score": 46.18,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0117",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0014",
+    "amount": 652,
+    "priority_score": 31.63,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0118",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0036",
+    "amount": 500,
+    "priority_score": 10.4,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0119",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0036",
+    "amount": 500,
+    "priority_score": 10.4,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0120",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0024",
+    "amount": 500,
+    "priority_score": 10.4,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0121",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0024",
+    "amount": 500,
+    "priority_score": 10.4,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0122",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0023",
+    "amount": 500,
+    "priority_score": 20.4,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0124",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0012",
+    "amount": 500,
+    "priority_score": 5.4,
+    "contact_opt_out": true,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0125",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0012",
+    "amount": 500,
+    "priority_score": 5.4,
+    "contact_opt_out": true,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0127",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0009",
+    "amount": 500,
+    "priority_score": 20.4,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0128",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0009",
+    "amount": 500,
+    "priority_score": 20.4,
+    "contact_opt_out": false,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0129",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0031",
+    "amount": 500,
+    "priority_score": 10.4,
+    "contact_opt_out": true,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0130",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0031",
+    "amount": 500,
+    "priority_score": 10.4,
+    "contact_opt_out": true,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0131",
+    "event_type": "subscription_failed",
+    "customer_id": "CUST-0031",
+    "amount": 500,
+    "priority_score": 10.4,
+    "contact_opt_out": true,
+    "flag_reason": "Retry count below cap",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0132",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0008",
+    "amount": 14897,
+    "priority_score": 16.92,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0133",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0018",
+    "amount": 96032,
+    "priority_score": 50,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0134",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0012",
+    "amount": 9511,
+    "priority_score": 12.61,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0135",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0005",
+    "amount": 285448,
+    "priority_score": 60,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0136",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0003",
+    "amount": 49207,
+    "priority_score": 59.37,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0137",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0012",
+    "amount": 8700,
+    "priority_score": 11.96,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0138",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0029",
+    "amount": 19978,
+    "priority_score": 25.98,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0139",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0030",
+    "amount": 305465,
+    "priority_score": 60,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0140",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0015",
+    "amount": 378202,
+    "priority_score": 50,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0141",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0018",
+    "amount": 125366,
+    "priority_score": 50,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0142",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0030",
+    "amount": 312544,
+    "priority_score": 60,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0143",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0029",
+    "amount": 12447,
+    "priority_score": 19.96,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0144",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0030",
+    "amount": 272181,
+    "priority_score": 60,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0145",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0012",
+    "amount": 37803,
+    "priority_score": 35.24,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0146",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0030",
+    "amount": 292752,
+    "priority_score": 60,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0147",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0031",
+    "amount": 49748,
+    "priority_score": 81.23,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0148",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0017",
+    "amount": 34078,
+    "priority_score": 37.26,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0149",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0030",
+    "amount": 210434,
+    "priority_score": 60,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0150",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0015",
+    "amount": 261156,
+    "priority_score": 50,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0151",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0030",
+    "amount": 314614,
+    "priority_score": 60,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0152",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0028",
+    "amount": 12329,
+    "priority_score": 29.86,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0153",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0031",
+    "amount": 44816,
+    "priority_score": 45.85,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0154",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0008",
+    "amount": 38479,
+    "priority_score": 35.78,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0155",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0015",
+    "amount": 293589,
+    "priority_score": 50,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0156",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0003",
+    "amount": 31122,
+    "priority_score": 44.9,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0157",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0001",
+    "amount": 153507,
+    "priority_score": 60,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0158",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0017",
+    "amount": 26415,
+    "priority_score": 31.13,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0159",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0031",
+    "amount": 35984,
+    "priority_score": 67.36,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0160",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0029",
+    "amount": 33571,
+    "priority_score": 36.86,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0161",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0008",
+    "amount": 45028,
+    "priority_score": 41.02,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0162",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0003",
+    "amount": 30553,
+    "priority_score": 44.44,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0163",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0015",
+    "amount": 62579,
+    "priority_score": 50,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0164",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0001",
+    "amount": 197525,
+    "priority_score": 97.14,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0165",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0029",
+    "amount": 7335,
+    "priority_score": 15.87,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0166",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0023",
+    "amount": 39657,
+    "priority_score": 51.73,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0167",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0008",
+    "amount": 37562,
+    "priority_score": 35.05,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0168",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0031",
+    "amount": 27869,
+    "priority_score": 32.3,
+    "contact_opt_out": true,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0169",
+    "event_type": "overdue_receivable",
+    "customer_id": "CUST-0008",
+    "amount": 45746,
+    "priority_score": 41.6,
+    "contact_opt_out": false,
+    "flag_reason": "Overdue",
+    "warnings": []
+  },
+  {
+    "event_id": "EVT-0001",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0002",
+    "amount": 100,
+    "priority_score": 60.08,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": [
+      "Duplicate event_id: EVT-0001"
+    ]
+  },
+  {
+    "event_id": "EDGE-0003",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-9999",
+    "amount": 100,
+    "priority_score": 40.08,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": [
+      "Orphan customer_id detected: CUST-9999"
+    ]
+  },
+  {
+    "event_id": "EDGE-0004",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0003",
+    "amount": 100,
+    "priority_score": 20.08,
+    "contact_opt_out": false,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": [
+      "Null timestamp detected"
+    ]
+  },
+  {
+    "event_id": "EDGE-0005",
+    "event_type": "failed_payment",
+    "customer_id": "CUST-0012",
+    "amount": 100,
+    "priority_score": 45.08,
+    "contact_opt_out": true,
+    "flag_reason": "Always at risk unless resolved",
+    "warnings": []
+  }
+]
