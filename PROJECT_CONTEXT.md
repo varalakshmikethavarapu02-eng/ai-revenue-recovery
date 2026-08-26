@@ -55,18 +55,30 @@ Guardrails (retry caps, opt-out, stopping rules) → Audit Trail + Streamlit Das
     3 warnings (duplicate ID, orphan customer, null timestamp), all 5 edge 
     cases confirmed handled
   - Output: data/flagged_events.json
+- Diagnosis Agent — DONE
+  - agents/diagnosis_agent.py: LLM-powered root cause classification via Gemini API
+  - Batches 15 events per API call (reduces 165 calls → ~11) to fit free-tier 
+    daily quota limits
+  - Model: gemini-flash-lite-latest (gemini-3.6-flash hit 20/day quota cap; 
+    gemini-2.5-flash returned 404 deprecated-for-new-users)
+  - Caching to data/diagnosed_events.json (keyed by event_id) — skips already-
+    diagnosed events on re-run
+  - Error handling: failed batches marked diagnosis_failed, batch continues 
+    without crashing
+  - contact_opt_out preserved in output for downstream guardrails
+  - Final verified run: 165/165 diagnosed successfully, 0 failures
+    Breakdown: insufficient_funds 44, no_engagement 50, card_expired 32, 
+    gateway_timeout 28, customer_dispute 11
+  - Output: data/diagnosed_events.json
 
 ## Current blocker (if any)
-gemini-2.5-flash deprecated for new API keys — must use gemini-3.6-flash only 
-(confirmed). Diagnosis agent now batches 15 events/call, so full 165-event 
-dataset needs only ~11 calls — fits well within 20/day quota IF run fresh, 
-in one sitting, without prior test calls burning quota. Cache was accidentally 
-cleared during model-testing — starting fresh tomorrow.
+none
 
 ## Next task
-Do NOT run diagnosis_agent.py with --limit or any test calls first. Run the 
-FULL batch (python3 agents/diagnosis_agent.py, no flags) as the very first 
-API call of the day, so all ~11 batch calls succeed within the 20/day quota.
+Decision Engine — build agents/decision_engine.py: maps each diagnosed root 
+cause to a bounded intervention (retry now / retry later / send reminder / 
+escalate to human / offer discount), respecting contact_opt_out and any 
+retry caps.
 
 ## Key files
 - data/customers.json — 40 customer profiles (risk_profile, contact_opt_out, 
@@ -89,3 +101,6 @@ API call of the day, so all ~11 batch calls succeed within the 20/day quota.
 - Dataset uses relative timestamps (datetime.now()-based) + fixed random.seed(42) — 
   regenerating dataset.py without preserving the seed will silently change customer 
   IDs, event counts, and which customers have consecutive-failure sequences
+- Diagnosis Agent uses gemini-flash-lite-latest (NOT gemini-3.6-flash or 
+  gemini-2.5-flash — both hit quota/deprecation issues). Batches 15 events per 
+  API call to stay well within free-tier daily limits.
