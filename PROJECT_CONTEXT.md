@@ -57,14 +57,16 @@ Guardrails (retry caps, opt-out, stopping rules) → Audit Trail + Streamlit Das
   - Output: data/flagged_events.json
 
 ## Current blocker (if any)
-None currently.
+gemini-2.5-flash deprecated for new API keys — must use gemini-3.6-flash only 
+(confirmed). Diagnosis agent now batches 15 events/call, so full 165-event 
+dataset needs only ~11 calls — fits well within 20/day quota IF run fresh, 
+in one sitting, without prior test calls burning quota. Cache was accidentally 
+cleared during model-testing — starting fresh tomorrow.
 
 ## Next task
-Diagnosis Agent — build agents/diagnosis_agent.py: LLM call (Gemini) that takes 
-a flagged event + customer context and classifies root cause into one of 5 
-categories (card_expired / insufficient_funds / gateway_timeout / customer_dispute 
-/ no_engagement), with caching to data/diagnosed_events.json to avoid redundant 
-API calls.
+Do NOT run diagnosis_agent.py with --limit or any test calls first. Run the 
+FULL batch (python3 agents/diagnosis_agent.py, no flags) as the very first 
+API call of the day, so all ~11 batch calls succeed within the 20/day quota.
 
 ## Key files
 - data/customers.json — 40 customer profiles (risk_profile, contact_opt_out, 
