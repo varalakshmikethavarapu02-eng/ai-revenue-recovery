@@ -44,6 +44,10 @@ def generate_data():
             
         customers.append(customer)
 
+    # Reserve 6 customers
+    reserved_customers = random.sample(customers, 6)
+    non_reserved_customers = [c for c in customers if c not in reserved_customers]
+
     # 155 events
     events = []
     
@@ -91,9 +95,10 @@ def generate_data():
             "connectivity_issue_suspected": conn_issue
         })
 
-    # 3. Subscription Failed (37)
+    # 3. Subscription Failed
+    # 3a. Random (37) for non-reserved only
     for i in range(37):
-        cust = random.choice(customers)
+        cust = random.choice(non_reserved_customers)
         events.append({
             "event_id": f"EVT-{len(events)+1:04d}",
             "event_type": "subscription_failed",
@@ -108,23 +113,25 @@ def generate_data():
             "consecutive_failure_number": random.choice([1, 2, 3])
         })
         
-    # Inject consecutive failures
-    base_cust = random.choice(customers)
-    base_time = NOW - timedelta(days=5)
-    for i in range(3):
-        events.append({
-            "event_id": f"EVT-{len(events)+1:04d}",
-            "event_type": "subscription_failed",
-            "customer_id": base_cust["customer_id"],
-            "status": "pending_action",
-            "timestamp": (base_time + timedelta(days=i)).isoformat(),
-            "ground_truth_recoverable": False,
-            "urgency_decay_hours": 72,
-            "plan_name": "Premium",
-            "mrr_amount": 500,
-            "failure_reason": "AUTO_DEBIT_MANDATE_FAILED",
-            "consecutive_failure_number": i + 1
-        })
+    # 3b. Sequences for 6 reserved customers
+    for cust in reserved_customers:
+        seq_len = random.choice([2, 3])
+        # Start time at least 5 days ago to allow for 24h intervals
+        start_time = NOW - timedelta(days=random.randint(5, 7))
+        for i in range(seq_len):
+            events.append({
+                "event_id": f"EVT-{len(events)+1:04d}",
+                "event_type": "subscription_failed",
+                "customer_id": cust["customer_id"],
+                "status": "pending_action",
+                "timestamp": (start_time + timedelta(hours=24 * i)).isoformat(),
+                "ground_truth_recoverable": False,
+                "urgency_decay_hours": 72,
+                "plan_name": "Premium",
+                "mrr_amount": 500,
+                "failure_reason": "AUTO_DEBIT_MANDATE_FAILED",
+                "consecutive_failure_number": i + 1
+            })
 
     # 4. Overdue Receivable (38)
     biz_customers = [c for c in customers if c["segment"] == "business"]
@@ -157,6 +164,20 @@ def generate_data():
     ]
     events.extend(edge_cases)
 
+    # 5. Validation Check
+    for cust in reserved_customers:
+        cust_events = [e for e in events if e["customer_id"] == cust["customer_id"] and e["event_type"] == "subscription_failed"]
+        cust_events.sort(key=lambda x: x["consecutive_failure_number"])
+        
+        assert len(cust_events) in [2, 3], f"Customer {cust['customer_id']} should have 2 or 3 events, has {len(cust_events)}"
+        
+        for i in range(len(cust_events)):
+            assert cust_events[i]["consecutive_failure_number"] == i + 1, f"Customer {cust['customer_id']} event {i} has wrong consecutive number"
+            if i > 0:
+                prev_time = datetime.fromisoformat(cust_events[i-1]["timestamp"])
+                curr_time = datetime.fromisoformat(cust_events[i]["timestamp"])
+                assert curr_time - prev_time == timedelta(hours=24), f"Customer {cust['customer_id']} events not 24h apart"
+    
     # Save
     with open("data/customers.json", "w") as f:
         json.dump(customers, f, indent=2)
@@ -171,33 +192,14 @@ def generate_data():
     for t in set(types):
         print(f"  {t}: {types.count(t)}")
         
-    inr_at_risk = sum(e.get("amount", e.get("cart_value", e.get("mrr_amount", e.get("invoice_amount", 0)))) for e in events if e.get("amount", 1) != 0)
-    print(f"Total INR at risk: {inr_at_risk}")
-    
-    gt = [e.get("ground_truth_recoverable", False) for e in events if "ground_truth_recoverable" in e]
-    print(f"Ground Truth Recoverable: True={gt.count(True)}, False={gt.count(False)} ({round(gt.count(True)/len(gt)*100, 1)}%)")
-    
-    reasons = [e.get("failure_reason") for e in events if e.get("failure_reason")]
-    print(f"Failure reason distribution: { {r: reasons.count(r) for r in set(reasons)} }")
-    
-    # 24h seq logic
-    # (Simplified for brevity as prompt asked for count)
-    print(f"Consecutive failure sequences (24h): 6 (CUST-0001, CUST-0005, CUST-0010, CUST-0015, CUST-0020, CUST-0025)")
-
-    # Biz breakdown
-    biz = [c for c in customers if c["segment"] == "business"]
-    print(f"Business: {len(biz)} | Micro: {len([c for c in biz if c['business_size']=='micro'])}")
-    
-    # Opted out
-    opted_out = [c for c in customers if c["contact_opt_out"]]
-    pending_opted = [e for e in events if any(c["customer_id"] == e["customer_id"] for c in opted_out) and e["status"] == "pending_action"]
-    print(f"Opted-out customers with pending events: {len(pending_opted)}")
-    
-    # Edge cases
-    print(f"Edge cases: 5 (EDGE-0001, EVT-0001, EDGE-0003, EDGE-0004, EDGE-0005)")
-    
-    channels = [c["preferred_channel"] for c in customers]
-    print(f"Channel preference distribution: { {ch: channels.count(ch) for ch in set(channels)} }")
-
+    # Output Reserved Sequences
+    print("\n--- RESERVED CUSTOMER SEQUENCES ---")
+    for cust in reserved_customers:
+        print(f"Customer: {cust['customer_id']}")
+        cust_events = [e for e in events if e["customer_id"] == cust['customer_id'] and e["event_type"] == "subscription_failed"]
+        cust_events.sort(key=lambda x: x["consecutive_failure_number"])
+        for e in cust_events:
+            print(f"  {e['event_id']} | {e['timestamp']} | {e['consecutive_failure_number']}")
+        
 if __name__ == "__main__":
     generate_data()
