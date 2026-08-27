@@ -105,10 +105,8 @@ def run_detection():
                 is_at_risk = True
                 reason = "Within 24h urgency window"
         elif event_type == 'subscription_failed':
-            # Cap 3 retries
-            if event.get('retry_count', 0) < 3:
                 is_at_risk = True
-                reason = "Retry count below cap"
+                reason = "Subscription payment failed"
         elif event_type == 'overdue_receivable':
             is_at_risk = True
             reason = "Overdue"
@@ -122,14 +120,12 @@ def run_detection():
             summary["breakdown"][event_type] = summary["breakdown"].get(event_type, 0) + 1
             
             flagged_event = {
-                "event_id": event_id,
-                "event_type": event_type,
-                "customer_id": customer_id,
-                "amount": amount,
-                "priority_score": calculate_priority_score(event, customer, amount, event.get('urgency_decay_hours', 24)),
-                "contact_opt_out": customer.get('contact_opt_out', False) if customer else False,
-                "flag_reason": reason,
-                "warnings": warnings
+                    **event,
+                    "amount": amount,
+                    "priority_score": calculate_priority_score(event, customer, amount, event.get('urgency_decay_hours', 24)),
+                    "contact_opt_out": customer.get('contact_opt_out', False) if customer else False,
+                    "flag_reason": reason,
+                    "warnings": warnings
             }
             flagged_events.append(flagged_event)
 

@@ -110,7 +110,7 @@ def run_diagnosis(limit: Optional[int] = None):
             customer = customer_map.get(original_event.get('customer_id'))
             
             diag["contact_opt_out"] = customer.get('contact_opt_out', False) if customer else False
-            diagnosed_cache[event_id] = diag
+            diagnosed_cache[event_id] = {**original_event, **diag}
             
             # Breakdown
             root_cause = diag.get("root_cause")

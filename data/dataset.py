@@ -7,7 +7,7 @@ from faker import Faker
 fake = Faker('en_IN')
 Faker.seed(42)
 random.seed(42)
-NOW = datetime(2026, 8, 25, 10, 0, 0)
+NOW = datetime.now()
 
 def generate_data():
     customers = []
@@ -101,6 +101,7 @@ def generate_data():
     # 3a. Random (37) for non-reserved only
     for i in range(37):
         cust = random.choice(non_reserved_customers)
+        failure_num = random.choice([1, 2, 3])
         events.append({
             "event_id": f"EVT-{len(events)+1:04d}",
             "event_type": "subscription_failed",
@@ -112,7 +113,8 @@ def generate_data():
             "plan_name": "Premium",
             "mrr_amount": random.randint(99, 999),
             "failure_reason": random.choice(["AUTO_DEBIT_MANDATE_FAILED", "INSUFFICIENT_FUNDS", "CARD_EXPIRED"]),
-            "consecutive_failure_number": random.choice([1, 2, 3])
+            "consecutive_failure_number": failure_num,
+            "retry_count": failure_num
         })
         
     # 3b. Sequences for 6 reserved customers
@@ -132,7 +134,8 @@ def generate_data():
                 "plan_name": "Premium",
                 "mrr_amount": 500,
                 "failure_reason": "AUTO_DEBIT_MANDATE_FAILED",
-                "consecutive_failure_number": i + 1
+                "consecutive_failure_number": i + 1,
+                "retry_count": i + 1
             })
 
     # 4. Overdue Receivable (38)

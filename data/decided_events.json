@@ -1,5 +1,5 @@
-{
-  "EVT-0001": {
+[
+  {
     "event_id": "EVT-0001",
     "event_type": "failed_payment",
     "customer_id": "CUST-0002",
@@ -14,9 +14,11 @@
     ],
     "root_cause": "card_expired",
     "confidence": 85,
-    "reasoning": "The failed payment for a high-risk customer points to outdated or expired card details."
+    "reasoning": "The failed payment for a high-risk customer points to outdated or expired card details.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0002": {
+  {
     "event_id": "EVT-0002",
     "event_type": "failed_payment",
     "customer_id": "CUST-0018",
@@ -34,9 +36,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 100,
-    "reasoning": "The transaction failed explicitly due to insufficient funds in the netbanking account."
+    "reasoning": "The transaction failed explicitly due to insufficient funds in the netbanking account.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0003": {
+  {
     "event_id": "EVT-0003",
     "event_type": "failed_payment",
     "customer_id": "CUST-0019",
@@ -54,9 +58,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 90,
-    "reasoning": "The UPI payment failed because the Virtual Payment Address (VPA) was not found by the gateway."
+    "reasoning": "The UPI payment failed because the Virtual Payment Address (VPA) was not found by the gateway.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0004": {
+  {
     "event_id": "EVT-0004",
     "event_type": "failed_payment",
     "customer_id": "CUST-0009",
@@ -74,9 +80,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 90,
-    "reasoning": "The transaction failed due to an invalid UPI PIN entered during the payment attempt."
+    "reasoning": "The transaction failed due to an invalid UPI PIN entered during the payment attempt.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0005": {
+  {
     "event_id": "EVT-0005",
     "event_type": "failed_payment",
     "customer_id": "CUST-0014",
@@ -94,9 +102,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 90,
-    "reasoning": "The UPI transaction failed because the VPA was not found."
+    "reasoning": "The UPI transaction failed because the VPA was not found.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0006": {
+  {
     "event_id": "EVT-0006",
     "event_type": "failed_payment",
     "customer_id": "CUST-0027",
@@ -114,9 +124,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 90,
-    "reasoning": "The transaction failed due to a VPA not found error on the UPI network."
+    "reasoning": "The transaction failed due to a VPA not found error on the UPI network.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0007": {
+  {
     "event_id": "EVT-0007",
     "event_type": "failed_payment",
     "customer_id": "CUST-0002",
@@ -134,9 +146,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 100,
-    "reasoning": "The netbanking payment failed specifically because of insufficient funds."
+    "reasoning": "The netbanking payment failed specifically because of insufficient funds.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0008": {
+  {
     "event_id": "EVT-0008",
     "event_type": "failed_payment",
     "customer_id": "CUST-0025",
@@ -154,9 +168,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The payment failed directly because the card has expired."
+    "reasoning": "The payment failed directly because the card has expired.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0009": {
+  {
     "event_id": "EVT-0009",
     "event_type": "failed_payment",
     "customer_id": "CUST-0028",
@@ -174,9 +190,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "The card transaction timed out while waiting for OTP entry."
+    "reasoning": "The card transaction timed out while waiting for OTP entry.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0010": {
+  {
     "event_id": "EVT-0010",
     "event_type": "failed_payment",
     "customer_id": "CUST-0011",
@@ -194,9 +212,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The payment failed because the card used for the transaction is expired."
+    "reasoning": "The payment failed because the card used for the transaction is expired.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0011": {
+  {
     "event_id": "EVT-0011",
     "event_type": "failed_payment",
     "customer_id": "CUST-0028",
@@ -214,9 +234,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "The UPI payment failed due to network downtime on the NPCI side."
+    "reasoning": "The UPI payment failed due to network downtime on the NPCI side.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0012": {
+  {
     "event_id": "EVT-0012",
     "event_type": "failed_payment",
     "customer_id": "CUST-0021",
@@ -234,9 +256,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "The transaction failed because NPCI servers were down during the UPI payment."
+    "reasoning": "The transaction failed because NPCI servers were down during the UPI payment.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0013": {
+  {
     "event_id": "EVT-0013",
     "event_type": "failed_payment",
     "customer_id": "CUST-0027",
@@ -254,9 +278,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The card payment failed because the card has expired."
+    "reasoning": "The card payment failed because the card has expired.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0014": {
+  {
     "event_id": "EVT-0014",
     "event_type": "failed_payment",
     "customer_id": "CUST-0015",
@@ -274,9 +300,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "The netbanking payment failed due to a bank server error."
+    "reasoning": "The netbanking payment failed due to a bank server error.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0015": {
+  {
     "event_id": "EVT-0015",
     "event_type": "failed_payment",
     "customer_id": "CUST-0013",
@@ -294,9 +322,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 90,
-    "reasoning": "The UPI transaction failed due to an invalid UPI PIN entry."
+    "reasoning": "The UPI transaction failed due to an invalid UPI PIN entry.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0016": {
+  {
     "event_id": "EVT-0016",
     "event_type": "failed_payment",
     "customer_id": "CUST-0008",
@@ -314,9 +344,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 99,
-    "reasoning": "The failure reason explicitly states INSUFFICIENT_FUNDS due to netbanking transaction limits or balance."
+    "reasoning": "The failure reason explicitly states INSUFFICIENT_FUNDS due to netbanking transaction limits or balance.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0017": {
+  {
     "event_id": "EVT-0017",
     "event_type": "failed_payment",
     "customer_id": "CUST-0011",
@@ -334,9 +366,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 99,
-    "reasoning": "The payment failed specifically because of an INSUFFICIENT_FUNDS error code."
+    "reasoning": "The payment failed specifically because of an INSUFFICIENT_FUNDS error code.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0018": {
+  {
     "event_id": "EVT-0018",
     "event_type": "failed_payment",
     "customer_id": "CUST-0038",
@@ -354,9 +388,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "VPA_NOT_FOUND points to an invalid Virtual Private Address or gateway resolution issue."
+    "reasoning": "VPA_NOT_FOUND points to an invalid Virtual Private Address or gateway resolution issue.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0019": {
+  {
     "event_id": "EVT-0019",
     "event_type": "failed_payment",
     "customer_id": "CUST-0005",
@@ -374,9 +410,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 99,
-    "reasoning": "The transaction failed due to the INSUFFICIENT_FUNDS reason code during netbanking execution."
+    "reasoning": "The transaction failed due to the INSUFFICIENT_FUNDS reason code during netbanking execution.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0020": {
+  {
     "event_id": "EVT-0020",
     "event_type": "failed_payment",
     "customer_id": "CUST-0039",
@@ -394,9 +432,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "The failure reason VPA_NOT_FOUND indicates a UPI handle resolution error with the gateway."
+    "reasoning": "The failure reason VPA_NOT_FOUND indicates a UPI handle resolution error with the gateway.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0021": {
+  {
     "event_id": "EVT-0021",
     "event_type": "failed_payment",
     "customer_id": "CUST-0024",
@@ -414,9 +454,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 98,
-    "reasoning": "The failure reason NPCI_DOWN directly implicates an external payment gateway or infrastructure outage."
+    "reasoning": "The failure reason NPCI_DOWN directly implicates an external payment gateway or infrastructure outage.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0022": {
+  {
     "event_id": "EVT-0022",
     "event_type": "failed_payment",
     "customer_id": "CUST-0007",
@@ -434,9 +476,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The failure reason is explicitly stated as CARD_EXPIRED."
+    "reasoning": "The failure reason is explicitly stated as CARD_EXPIRED.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0023": {
+  {
     "event_id": "EVT-0023",
     "event_type": "failed_payment",
     "customer_id": "CUST-0012",
@@ -454,9 +498,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 99,
-    "reasoning": "The failure reason indicates INSUFFICIENT_FUNDS during the netbanking attempt."
+    "reasoning": "The failure reason indicates INSUFFICIENT_FUNDS during the netbanking attempt.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0024": {
+  {
     "event_id": "EVT-0024",
     "event_type": "failed_payment",
     "customer_id": "CUST-0028",
@@ -474,9 +520,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 98,
-    "reasoning": "The failure reason BANK_SERVER_ERROR points directly to a timeout or issue on the bank gateway side."
+    "reasoning": "The failure reason BANK_SERVER_ERROR points directly to a timeout or issue on the bank gateway side.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0025": {
+  {
     "event_id": "EVT-0025",
     "event_type": "failed_payment",
     "customer_id": "CUST-0018",
@@ -494,9 +542,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 96,
-    "reasoning": "The OTP_TIMEOUT failure reason indicates a delay or drop during authentication via the payment gateway."
+    "reasoning": "The OTP_TIMEOUT failure reason indicates a delay or drop during authentication via the payment gateway.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0026": {
+  {
     "event_id": "EVT-0026",
     "event_type": "failed_payment",
     "customer_id": "CUST-0002",
@@ -514,9 +564,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The transaction explicitly failed because of CARD_EXPIRED."
+    "reasoning": "The transaction explicitly failed because of CARD_EXPIRED.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0027": {
+  {
     "event_id": "EVT-0027",
     "event_type": "failed_payment",
     "customer_id": "CUST-0017",
@@ -534,9 +586,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The explicit failure reason is CARD_EXPIRED after multiple retries."
+    "reasoning": "The explicit failure reason is CARD_EXPIRED after multiple retries.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0028": {
+  {
     "event_id": "EVT-0028",
     "event_type": "failed_payment",
     "customer_id": "CUST-0013",
@@ -554,9 +608,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "The failure reason VPA_NOT_FOUND indicates a lookup error on the UPI gateway."
+    "reasoning": "The failure reason VPA_NOT_FOUND indicates a lookup error on the UPI gateway.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0029": {
+  {
     "event_id": "EVT-0029",
     "event_type": "failed_payment",
     "customer_id": "CUST-0031",
@@ -574,9 +630,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 98,
-    "reasoning": "The failure reason BANK_SERVER_ERROR signifies a temporary gateway or bank infrastructure failure."
+    "reasoning": "The failure reason BANK_SERVER_ERROR signifies a temporary gateway or bank infrastructure failure.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0030": {
+  {
     "event_id": "EVT-0030",
     "event_type": "failed_payment",
     "customer_id": "CUST-0019",
@@ -594,9 +652,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "The VPA_NOT_FOUND failure reason points to a gateway resolution problem for the UPI identifier."
+    "reasoning": "The VPA_NOT_FOUND failure reason points to a gateway resolution problem for the UPI identifier.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0031": {
+  {
     "event_id": "EVT-0031",
     "event_type": "failed_payment",
     "customer_id": "CUST-0024",
@@ -614,9 +674,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 95,
-    "reasoning": "The payment failed due to an OTP timeout during transaction processing."
+    "reasoning": "The payment failed due to an OTP timeout during transaction processing.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0032": {
+  {
     "event_id": "EVT-0032",
     "event_type": "failed_payment",
     "customer_id": "CUST-0030",
@@ -634,9 +696,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The failure reason explicitly states that the card has expired."
+    "reasoning": "The failure reason explicitly states that the card has expired.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0033": {
+  {
     "event_id": "EVT-0033",
     "event_type": "failed_payment",
     "customer_id": "CUST-0013",
@@ -654,9 +718,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The transaction failed because the associated card is expired."
+    "reasoning": "The transaction failed because the associated card is expired.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0034": {
+  {
     "event_id": "EVT-0034",
     "event_type": "failed_payment",
     "customer_id": "CUST-0031",
@@ -674,9 +740,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The failure reason is explicitly noted as CARD_EXPIRED."
+    "reasoning": "The failure reason is explicitly noted as CARD_EXPIRED.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0035": {
+  {
     "event_id": "EVT-0035",
     "event_type": "failed_payment",
     "customer_id": "CUST-0015",
@@ -694,9 +762,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The payment failed due to an expired card."
+    "reasoning": "The payment failed due to an expired card.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0036": {
+  {
     "event_id": "EVT-0036",
     "event_type": "failed_payment",
     "customer_id": "CUST-0003",
@@ -714,9 +784,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 90,
-    "reasoning": "The UPI PIN was entered incorrectly leading to a validation failure at the gateway."
+    "reasoning": "The UPI PIN was entered incorrectly leading to a validation failure at the gateway.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0037": {
+  {
     "event_id": "EVT-0037",
     "event_type": "failed_payment",
     "customer_id": "CUST-0032",
@@ -734,9 +806,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 100,
-    "reasoning": "The failure was caused by the NPCI gateway being down."
+    "reasoning": "The failure was caused by the NPCI gateway being down.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0038": {
+  {
     "event_id": "EVT-0038",
     "event_type": "failed_payment",
     "customer_id": "CUST-0022",
@@ -754,9 +828,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 90,
-    "reasoning": "The transaction failed due to an invalid UPI PIN error during gateway processing."
+    "reasoning": "The transaction failed due to an invalid UPI PIN error during gateway processing.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0039": {
+  {
     "event_id": "EVT-0039",
     "event_type": "failed_payment",
     "customer_id": "CUST-0026",
@@ -774,9 +850,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The payment failure is explicitly attributed to an expired card."
+    "reasoning": "The payment failure is explicitly attributed to an expired card.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0040": {
+  {
     "event_id": "EVT-0040",
     "event_type": "failed_payment",
     "customer_id": "CUST-0020",
@@ -794,9 +872,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 100,
-    "reasoning": "The UPI payment failed because the NPCI network was down."
+    "reasoning": "The UPI payment failed because the NPCI network was down.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0041": {
+  {
     "event_id": "EVT-0041",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0039",
@@ -816,9 +896,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 85,
-    "reasoning": "The checkout was abandoned during payment processing with suspected connectivity issues."
+    "reasoning": "The checkout was abandoned during payment processing with suspected connectivity issues.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0042": {
+  {
     "event_id": "EVT-0042",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0037",
@@ -838,9 +920,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "The user dropped off early at the address stage of checkout due to lack of completion momentum."
+    "reasoning": "The user dropped off early at the address stage of checkout due to lack of completion momentum.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0043": {
+  {
     "event_id": "EVT-0043",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0011",
@@ -860,9 +944,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "The customer abandoned the cart during the payment method selection stage."
+    "reasoning": "The customer abandoned the cart during the payment method selection stage.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0044": {
+  {
     "event_id": "EVT-0044",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0027",
@@ -882,9 +968,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 80,
-    "reasoning": "The drop-off occurred during the payment processing stage on a desktop device."
+    "reasoning": "The drop-off occurred during the payment processing stage on a desktop device.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0045": {
+  {
     "event_id": "EVT-0045",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0019",
@@ -904,9 +992,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "The first-time buyer abandoned the checkout flow at the address stage."
+    "reasoning": "The first-time buyer abandoned the checkout flow at the address stage.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0046": {
+  {
     "event_id": "EVT-0046",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0028",
@@ -926,9 +1016,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 85,
-    "reasoning": "The customer abandoned the cart during payment method selection with low payment reliability and mobile device usage."
+    "reasoning": "The customer abandoned the cart during payment method selection with low payment reliability and mobile device usage.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0047": {
+  {
     "event_id": "EVT-0047",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0005",
@@ -948,9 +1040,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 80,
-    "reasoning": "Business customer dropped off at payment method selection with a medium risk profile and moderate payment reliability."
+    "reasoning": "Business customer dropped off at payment method selection with a medium risk profile and moderate payment reliability.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0048": {
+  {
     "event_id": "EVT-0048",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0030",
@@ -970,9 +1064,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 75,
-    "reasoning": "Desktop user dropped off during payment processing, suggesting a technical bottleneck at the gateway."
+    "reasoning": "Desktop user dropped off during payment processing, suggesting a technical bottleneck at the gateway.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0049": {
+  {
     "event_id": "EVT-0049",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0039",
@@ -992,9 +1088,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 82,
-    "reasoning": "High-risk individual customer abandoned during payment processing due to likely financial constraints."
+    "reasoning": "High-risk individual customer abandoned during payment processing due to likely financial constraints.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0050": {
+  {
     "event_id": "EVT-0050",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0015",
@@ -1014,9 +1112,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 78,
-    "reasoning": "Returning business customer dropped off specifically at the OTP verification stage during transaction authorization."
+    "reasoning": "Returning business customer dropped off specifically at the OTP verification stage during transaction authorization.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0051": {
+  {
     "event_id": "EVT-0051",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0018",
@@ -1036,9 +1136,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 80,
-    "reasoning": "Drop-off during payment processing despite high payment reliability points toward a technical gateway issue."
+    "reasoning": "Drop-off during payment processing despite high payment reliability points toward a technical gateway issue.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0052": {
+  {
     "event_id": "EVT-0052",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0027",
@@ -1058,9 +1160,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 75,
-    "reasoning": "The drop-off at OTP verification with low payment method reliability indicates potential card authentication failure."
+    "reasoning": "The drop-off at OTP verification with low payment method reliability indicates potential card authentication failure.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0053": {
+  {
     "event_id": "EVT-0053",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0027",
@@ -1080,9 +1184,11 @@
     "warnings": [],
     "root_cause": "customer_dispute",
     "confidence": 70,
-    "reasoning": "First-time micro business buyer abandoned at OTP verification possibly questioning transaction terms."
+    "reasoning": "First-time micro business buyer abandoned at OTP verification possibly questioning transaction terms.",
+    "action": "escalate_to_human",
+    "action_reason": "root_cause=customer_dispute -> escalate_to_human"
   },
-  "EVT-0054": {
+  {
     "event_id": "EVT-0054",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0030",
@@ -1102,9 +1208,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 90,
-    "reasoning": "A suspected connectivity issue explicitly flagged during OTP verification points directly to a gateway timeout."
+    "reasoning": "A suspected connectivity issue explicitly flagged during OTP verification points directly to a gateway timeout.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0055": {
+  {
     "event_id": "EVT-0055",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0035",
@@ -1124,9 +1232,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "High-risk individual dropped off during payment processing with moderate payment reliability."
+    "reasoning": "High-risk individual dropped off during payment processing with moderate payment reliability.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0056": {
+  {
     "event_id": "EVT-0056",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0040",
@@ -1146,9 +1256,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 78,
-    "reasoning": "Desktop drop-off during payment processing for a first-time buyer suggests a technical payment hurdle."
+    "reasoning": "Desktop drop-off during payment processing for a first-time buyer suggests a technical payment hurdle.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0057": {
+  {
     "event_id": "EVT-0057",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0019",
@@ -1168,9 +1280,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 82,
-    "reasoning": "Business customer with high payment reliability dropped off during payment processing due to card validation issues."
+    "reasoning": "Business customer with high payment reliability dropped off during payment processing due to card validation issues.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0058": {
+  {
     "event_id": "EVT-0058",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0020",
@@ -1190,9 +1304,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 92,
-    "reasoning": "Explicitly flagged connectivity issue during mobile payment processing indicates a network or gateway timeout."
+    "reasoning": "Explicitly flagged connectivity issue during mobile payment processing indicates a network or gateway timeout.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0059": {
+  {
     "event_id": "EVT-0059",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0032",
@@ -1212,9 +1328,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 76,
-    "reasoning": "Drop-off at the OTP verification stage indicates authentication failure often tied to expired or blocked cards."
+    "reasoning": "Drop-off at the OTP verification stage indicates authentication failure often tied to expired or blocked cards.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0060": {
+  {
     "event_id": "EVT-0060",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0030",
@@ -1234,9 +1352,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 88,
-    "reasoning": "Flagged connectivity issue combined with payment processing drop-off clearly points to a gateway timeout."
+    "reasoning": "Flagged connectivity issue combined with payment processing drop-off clearly points to a gateway timeout.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0061": {
+  {
     "event_id": "EVT-0061",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0027",
@@ -1256,9 +1376,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer dropped off during the otp_verification stage without completing the checkout process and shows no active engagement."
+    "reasoning": "The customer dropped off during the otp_verification stage without completing the checkout process and shows no active engagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0062": {
+  {
     "event_id": "EVT-0062",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0010",
@@ -1278,9 +1400,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 80,
-    "reasoning": "The user abandoned the transaction directly at the payment_processing stage, suggesting a technical or gateway interruption."
+    "reasoning": "The user abandoned the transaction directly at the payment_processing stage, suggesting a technical or gateway interruption.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0063": {
+  {
     "event_id": "EVT-0063",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0030",
@@ -1300,9 +1424,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer stalled at payment_method_selection and failed to proceed further due to a lack of immediate engagement."
+    "reasoning": "The customer stalled at payment_method_selection and failed to proceed further due to a lack of immediate engagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0064": {
+  {
     "event_id": "EVT-0064",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0015",
@@ -1322,9 +1448,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "Drop-off occurred early at the address stage, indicating the user simply disengaged before finalizing details."
+    "reasoning": "Drop-off occurred early at the address stage, indicating the user simply disengaged before finalizing details.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0065": {
+  {
     "event_id": "EVT-0065",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0010",
@@ -1344,9 +1472,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer abandoned the session during the address input phase with no further interaction recorded."
+    "reasoning": "The customer abandoned the session during the address input phase with no further interaction recorded.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0066": {
+  {
     "event_id": "EVT-0066",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0007",
@@ -1366,9 +1496,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "As a first-time buyer dropping off at the address stage, the root cause is a lack of sustained engagement."
+    "reasoning": "As a first-time buyer dropping off at the address stage, the root cause is a lack of sustained engagement.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0067": {
+  {
     "event_id": "EVT-0067",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0031",
@@ -1388,9 +1520,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The user failed to complete the otp_verification step, reflecting typical drop-off behavior and lack of engagement."
+    "reasoning": "The user failed to complete the otp_verification step, reflecting typical drop-off behavior and lack of engagement.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0068": {
+  {
     "event_id": "EVT-0068",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0035",
@@ -1410,9 +1544,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "High-risk customer abandoned the flow at otp_verification without completing the necessary security steps."
+    "reasoning": "High-risk customer abandoned the flow at otp_verification without completing the necessary security steps.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0069": {
+  {
     "event_id": "EVT-0069",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0040",
@@ -1432,9 +1568,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The session was abandoned at the payment_method_selection stage due to user disengagement on a mobile device."
+    "reasoning": "The session was abandoned at the payment_method_selection stage due to user disengagement on a mobile device.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0070": {
+  {
     "event_id": "EVT-0070",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0028",
@@ -1454,9 +1592,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The first-time buyer abandoned the cart at the address stage due to session drop-off and low initial commitment."
+    "reasoning": "The first-time buyer abandoned the cart at the address stage due to session drop-off and low initial commitment.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0071": {
+  {
     "event_id": "EVT-0071",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0003",
@@ -1476,9 +1616,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "Drop-off happened at the address input stage, representing a classic case of user disengagement."
+    "reasoning": "Drop-off happened at the address input stage, representing a classic case of user disengagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0072": {
+  {
     "event_id": "EVT-0072",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0010",
@@ -1498,9 +1640,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 85,
-    "reasoning": "Abandonment occurred specifically during payment_processing, pointing to a potential payment gateway latency or timeout issue."
+    "reasoning": "Abandonment occurred specifically during payment_processing, pointing to a potential payment gateway latency or timeout issue.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0073": {
+  {
     "event_id": "EVT-0073",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0040",
@@ -1520,9 +1664,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer stopped interacting at the payment_method_selection stage, indicating a drop in active engagement."
+    "reasoning": "The customer stopped interacting at the payment_method_selection stage, indicating a drop in active engagement.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0074": {
+  {
     "event_id": "EVT-0074",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0017",
@@ -1542,9 +1688,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The user stalled during otp_verification and failed to complete the secondary authentication step."
+    "reasoning": "The user stalled during otp_verification and failed to complete the secondary authentication step.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0075": {
+  {
     "event_id": "EVT-0075",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0035",
@@ -1564,9 +1712,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "Abandonment at the address stage highlights a typical drop-off driven by lack of continued user engagement."
+    "reasoning": "Abandonment at the address stage highlights a typical drop-off driven by lack of continued user engagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0076": {
+  {
     "event_id": "EVT-0076",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0017",
@@ -1586,9 +1736,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "The checkout was abandoned during OTP verification without completion, indicating a drop-off due to lack of user engagement or friction."
+    "reasoning": "The checkout was abandoned during OTP verification without completion, indicating a drop-off due to lack of user engagement or friction.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0077": {
+  {
     "event_id": "EVT-0077",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0016",
@@ -1608,9 +1760,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "The customer abandoned the checkout process at the OTP verification stage before finalizing the transaction."
+    "reasoning": "The customer abandoned the checkout process at the OTP verification stage before finalizing the transaction.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0078": {
+  {
     "event_id": "EVT-0078",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0026",
@@ -1630,9 +1784,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer dropped off early in the checkout flow at the address stage, reflecting a failure to complete engagement."
+    "reasoning": "The customer dropped off early in the checkout flow at the address stage, reflecting a failure to complete engagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0079": {
+  {
     "event_id": "EVT-0079",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0015",
@@ -1652,9 +1808,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer abandoned the cart right during the payment method selection stage, signaling discontinued interaction."
+    "reasoning": "The customer abandoned the cart right during the payment method selection stage, signaling discontinued interaction.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0080": {
+  {
     "event_id": "EVT-0080",
     "event_type": "checkout_abandoned",
     "customer_id": "CUST-0007",
@@ -1674,9 +1832,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "Abandonment occurred during the OTP verification step, pointing to an incomplete checkout due to dropped engagement."
+    "reasoning": "Abandonment occurred during the OTP verification step, pointing to an incomplete checkout due to dropped engagement.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   },
-  "EVT-0081": {
+  {
     "event_id": "EVT-0081",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0019",
@@ -1696,9 +1856,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 80,
-    "reasoning": "The subscription payment failed due to an auto-debit mandate failure, often associated with systemic or gateway processing issues."
+    "reasoning": "The subscription payment failed due to an auto-debit mandate failure, often associated with systemic or gateway processing issues.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0082": {
+  {
     "event_id": "EVT-0082",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0025",
@@ -1718,9 +1880,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 80,
-    "reasoning": "Repeated auto-debit mandate failures suggest automated processing or mandate execution issues at the gateway level."
+    "reasoning": "Repeated auto-debit mandate failures suggest automated processing or mandate execution issues at the gateway level.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0083": {
+  {
     "event_id": "EVT-0083",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0017",
@@ -1740,9 +1904,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 80,
-    "reasoning": "The failure stems from an auto-debit mandate error during recurring billing execution."
+    "reasoning": "The failure stems from an auto-debit mandate error during recurring billing execution.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0084": {
+  {
     "event_id": "EVT-0084",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0035",
@@ -1762,9 +1928,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 95,
-    "reasoning": "The subscription payment explicitly failed because the customer's card has expired."
+    "reasoning": "The subscription payment explicitly failed because the customer's card has expired.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0085": {
+  {
     "event_id": "EVT-0085",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0027",
@@ -1784,9 +1952,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The failure reason is explicitly recorded as insufficient funds in the customer's account."
+    "reasoning": "The failure reason is explicitly recorded as insufficient funds in the customer's account.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0086": {
+  {
     "event_id": "EVT-0086",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0001",
@@ -1806,9 +1976,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The subscription payment could not be processed due to insufficient funds available to the customer."
+    "reasoning": "The subscription payment could not be processed due to insufficient funds available to the customer.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0087": {
+  {
     "event_id": "EVT-0087",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0017",
@@ -1828,9 +2000,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 95,
-    "reasoning": "The failure was directly caused by the card being expired after multiple attempts."
+    "reasoning": "The failure was directly caused by the card being expired after multiple attempts.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0088": {
+  {
     "event_id": "EVT-0088",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0015",
@@ -1850,9 +2024,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 80,
-    "reasoning": "The transaction failed due to an auto-debit mandate failure during scheduled processing."
+    "reasoning": "The transaction failed due to an auto-debit mandate failure during scheduled processing.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0089": {
+  {
     "event_id": "EVT-0089",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0005",
@@ -1872,9 +2048,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The failure reason indicates that the account lacked sufficient funds to cover the subscription amount."
+    "reasoning": "The failure reason indicates that the account lacked sufficient funds to cover the subscription amount.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0090": {
+  {
     "event_id": "EVT-0090",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0008",
@@ -1894,9 +2072,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The subscription payment failed due to an insufficient funds error on the customer's payment method."
+    "reasoning": "The subscription payment failed due to an insufficient funds error on the customer's payment method.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0091": {
+  {
     "event_id": "EVT-0091",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0008",
@@ -1916,9 +2096,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason."
+    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0092": {
+  {
     "event_id": "EVT-0092",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0025",
@@ -1938,9 +2120,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason."
+    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0093": {
+  {
     "event_id": "EVT-0093",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0010",
@@ -1960,9 +2144,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason."
+    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0094": {
+  {
     "event_id": "EVT-0094",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0018",
@@ -1982,9 +2168,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason."
+    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0095": {
+  {
     "event_id": "EVT-0095",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0016",
@@ -2004,9 +2192,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason."
+    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0096": {
+  {
     "event_id": "EVT-0096",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0024",
@@ -2026,9 +2216,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 80,
-    "reasoning": "Auto debit mandate failure typically indicates lack of sufficient funds or mandate authorization issues."
+    "reasoning": "Auto debit mandate failure typically indicates lack of sufficient funds or mandate authorization issues.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0097": {
+  {
     "event_id": "EVT-0097",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0035",
@@ -2048,9 +2240,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason."
+    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0098": {
+  {
     "event_id": "EVT-0098",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0016",
@@ -2070,9 +2264,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason."
+    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0099": {
+  {
     "event_id": "EVT-0099",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0014",
@@ -2092,9 +2288,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 80,
-    "reasoning": "Auto debit mandate failure typically indicates lack of sufficient funds or mandate authorization issues."
+    "reasoning": "Auto debit mandate failure typically indicates lack of sufficient funds or mandate authorization issues.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0100": {
+  {
     "event_id": "EVT-0100",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0001",
@@ -2114,9 +2312,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason."
+    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0101": {
+  {
     "event_id": "EVT-0101",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0012",
@@ -2136,9 +2336,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason."
+    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0102": {
+  {
     "event_id": "EVT-0102",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0016",
@@ -2158,9 +2360,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason."
+    "reasoning": "The payment failure explicitly states INSUFFICIENT_FUNDS as the reason.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0103": {
+  {
     "event_id": "EVT-0103",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0004",
@@ -2180,9 +2384,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 80,
-    "reasoning": "Auto debit mandate failure typically indicates lack of sufficient funds or mandate authorization issues."
+    "reasoning": "Auto debit mandate failure typically indicates lack of sufficient funds or mandate authorization issues.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0104": {
+  {
     "event_id": "EVT-0104",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0037",
@@ -2202,9 +2408,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason."
+    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0105": {
+  {
     "event_id": "EVT-0105",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0015",
@@ -2224,9 +2432,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 95,
-    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason."
+    "reasoning": "The payment failure explicitly states CARD_EXPIRED as the reason.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0106": {
+  {
     "event_id": "EVT-0106",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0002",
@@ -2246,9 +2456,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The payment failure reason explicitly states CARD_EXPIRED."
+    "reasoning": "The payment failure reason explicitly states CARD_EXPIRED.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0107": {
+  {
     "event_id": "EVT-0107",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0007",
@@ -2268,9 +2480,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 100,
-    "reasoning": "The payment failure reason explicitly indicates INSUFFICIENT_FUNDS."
+    "reasoning": "The payment failure reason explicitly indicates INSUFFICIENT_FUNDS.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0108": {
+  {
     "event_id": "EVT-0108",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0010",
@@ -2290,9 +2504,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The payment failure reason is explicitly CARD_EXPIRED."
+    "reasoning": "The payment failure reason is explicitly CARD_EXPIRED.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0109": {
+  {
     "event_id": "EVT-0109",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0022",
@@ -2312,9 +2528,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The failure reason provided is CARD_EXPIRED."
+    "reasoning": "The failure reason provided is CARD_EXPIRED.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0110": {
+  {
     "event_id": "EVT-0110",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0031",
@@ -2334,9 +2552,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 100,
-    "reasoning": "The payment failure reason is explicitly INSUFFICIENT_FUNDS."
+    "reasoning": "The payment failure reason is explicitly INSUFFICIENT_FUNDS.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0111": {
+  {
     "event_id": "EVT-0111",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0015",
@@ -2356,9 +2576,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 100,
-    "reasoning": "The payment failure reason explicitly notes INSUFFICIENT_FUNDS."
+    "reasoning": "The payment failure reason explicitly notes INSUFFICIENT_FUNDS.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0112": {
+  {
     "event_id": "EVT-0112",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0007",
@@ -2378,9 +2600,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 100,
-    "reasoning": "The payment failure reason is listed as INSUFFICIENT_FUNDS."
+    "reasoning": "The payment failure reason is listed as INSUFFICIENT_FUNDS.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0113": {
+  {
     "event_id": "EVT-0113",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0025",
@@ -2400,9 +2624,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Auto-debit mandate failures are typically categorized under insufficient funds when recurring draws fail."
+    "reasoning": "Auto-debit mandate failures are typically categorized under insufficient funds when recurring draws fail.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0114": {
+  {
     "event_id": "EVT-0114",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0006",
@@ -2422,9 +2648,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "The failure stems from an auto-debit mandate failure, usually associated with lack of balance."
+    "reasoning": "The failure stems from an auto-debit mandate failure, usually associated with lack of balance.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0115": {
+  {
     "event_id": "EVT-0115",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0004",
@@ -2444,9 +2672,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 100,
-    "reasoning": "The failure reason is explicitly stated as INSUFFICIENT_FUNDS."
+    "reasoning": "The failure reason is explicitly stated as INSUFFICIENT_FUNDS.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0116": {
+  {
     "event_id": "EVT-0116",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0031",
@@ -2466,9 +2696,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 100,
-    "reasoning": "The payment failure reason is explicitly INSUFFICIENT_FUNDS."
+    "reasoning": "The payment failure reason is explicitly INSUFFICIENT_FUNDS.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0117": {
+  {
     "event_id": "EVT-0117",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0024",
@@ -2488,9 +2720,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 100,
-    "reasoning": "The payment failure reason is explicitly CARD_EXPIRED."
+    "reasoning": "The payment failure reason is explicitly CARD_EXPIRED.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0118": {
+  {
     "event_id": "EVT-0118",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0034",
@@ -2510,9 +2744,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Auto-debit mandate failures generally map to insufficient funds on the customer's account."
+    "reasoning": "Auto-debit mandate failures generally map to insufficient funds on the customer's account.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0119": {
+  {
     "event_id": "EVT-0119",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0034",
@@ -2532,9 +2768,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Repeated auto-debit mandate failure points to insufficient funds or account issues."
+    "reasoning": "Repeated auto-debit mandate failure points to insufficient funds or account issues.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0120": {
+  {
     "event_id": "EVT-0120",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0034",
@@ -2554,9 +2792,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Continuous auto-debit mandate failures across multiple retries typically indicate insufficient funds."
+    "reasoning": "Continuous auto-debit mandate failures across multiple retries typically indicate insufficient funds.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0121": {
+  {
     "event_id": "EVT-0121",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0036",
@@ -2576,9 +2816,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "The auto-debit mandate failed due to recurring payment issues typical of insufficient bank balance or mandate execution failure."
+    "reasoning": "The auto-debit mandate failed due to recurring payment issues typical of insufficient bank balance or mandate execution failure.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0122": {
+  {
     "event_id": "EVT-0122",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0036",
@@ -2598,9 +2840,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Consecutive auto-debit mandate failure points to an ongoing lack of available funds or mandate authorization issue."
+    "reasoning": "Consecutive auto-debit mandate failure points to an ongoing lack of available funds or mandate authorization issue.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0123": {
+  {
     "event_id": "EVT-0123",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0021",
@@ -2620,9 +2864,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "First-time failure of the auto-debit mandate strongly suggests temporary insufficient funds in the account."
+    "reasoning": "First-time failure of the auto-debit mandate strongly suggests temporary insufficient funds in the account.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0124": {
+  {
     "event_id": "EVT-0124",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0021",
@@ -2642,9 +2888,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Repeated auto-debit mandate failure indicates persistent payment collection issues on the customer side."
+    "reasoning": "Repeated auto-debit mandate failure indicates persistent payment collection issues on the customer side.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0125": {
+  {
     "event_id": "EVT-0125",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0021",
@@ -2664,9 +2912,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 90,
-    "reasoning": "Third consecutive retry failure on auto-debit confirms sustained insufficient funds or a blocked mandate."
+    "reasoning": "Third consecutive retry failure on auto-debit confirms sustained insufficient funds or a blocked mandate.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0126": {
+  {
     "event_id": "EVT-0126",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0029",
@@ -2686,9 +2936,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Initial subscription charge failed via auto-debit mandate, likely due to low account balance."
+    "reasoning": "Initial subscription charge failed via auto-debit mandate, likely due to low account balance.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0127": {
+  {
     "event_id": "EVT-0127",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0029",
@@ -2708,9 +2960,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Second consecutive auto-debit failure points to persistent insufficient funds."
+    "reasoning": "Second consecutive auto-debit failure points to persistent insufficient funds.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0128": {
+  {
     "event_id": "EVT-0128",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0029",
@@ -2730,9 +2984,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 90,
-    "reasoning": "Third retry failure on the auto-debit mandate indicates continuous lack of funds or mandate issues."
+    "reasoning": "Third retry failure on the auto-debit mandate indicates continuous lack of funds or mandate issues.",
+    "action": "escalate_to_human",
+    "action_reason": "retry_count=3 >= 3 -> escalated regardless of root_cause"
   },
-  "EVT-0129": {
+  {
     "event_id": "EVT-0129",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0033",
@@ -2752,9 +3008,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Auto-debit mandate failure on the first attempt is typically caused by insufficient funds."
+    "reasoning": "Auto-debit mandate failure on the first attempt is typically caused by insufficient funds.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0130": {
+  {
     "event_id": "EVT-0130",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0033",
@@ -2774,9 +3032,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Continued auto-debit failure on retry signifies unresolved insufficient funds."
+    "reasoning": "Continued auto-debit failure on retry signifies unresolved insufficient funds.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0131": {
+  {
     "event_id": "EVT-0131",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0028",
@@ -2796,9 +3056,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 80,
-    "reasoning": "Low payment method reliability combined with an auto-debit mandate failure points to insufficient funds."
+    "reasoning": "Low payment method reliability combined with an auto-debit mandate failure points to insufficient funds.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0132": {
+  {
     "event_id": "EVT-0132",
     "event_type": "subscription_failed",
     "customer_id": "CUST-0028",
@@ -2818,9 +3080,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Second failure of the recurring payment method indicates ongoing funding or mandate problems."
+    "reasoning": "Second failure of the recurring payment method indicates ongoing funding or mandate problems.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0133": {
+  {
     "event_id": "EVT-0133",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0017",
@@ -2840,9 +3104,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "The invoice is severely overdue by 90 days with low voice call success rate, indicating lack of communication and engagement."
+    "reasoning": "The invoice is severely overdue by 90 days with low voice call success rate, indicating lack of communication and engagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0134": {
+  {
     "event_id": "EVT-0134",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0019",
@@ -2862,9 +3128,11 @@
     "warnings": [],
     "root_cause": "customer_dispute",
     "confidence": 80,
-    "reasoning": "Multiple reminders sent over 19 days without resolution despite high payment reliability points to a potential billing dispute."
+    "reasoning": "Multiple reminders sent over 19 days without resolution despite high payment reliability points to a potential billing dispute.",
+    "action": "escalate_to_human",
+    "action_reason": "root_cause=customer_dispute -> escalate_to_human"
   },
-  "EVT-0135": {
+  {
     "event_id": "EVT-0135",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0004",
@@ -2884,9 +3152,11 @@
     "warnings": [],
     "root_cause": "customer_dispute",
     "confidence": 75,
-    "reasoning": "Overdue receivable with moderate payment reliability suggests a delayed payment likely stemming from a transactional dispute."
+    "reasoning": "Overdue receivable with moderate payment reliability suggests a delayed payment likely stemming from a transactional dispute.",
+    "action": "escalate_to_human",
+    "action_reason": "root_cause=customer_dispute -> escalate_to_human"
   },
-  "EVT-0136": {
+  {
     "event_id": "EVT-0136",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0022",
@@ -2906,9 +3176,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer has low payment reliability and multiple past reminders failed to elicit a response."
+    "reasoning": "The customer has low payment reliability and multiple past reminders failed to elicit a response.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0137": {
+  {
     "event_id": "EVT-0137",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0018",
@@ -2928,9 +3200,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 75,
-    "reasoning": "Despite high customer payment reliability, the invoice remains overdue likely due to a temporary processing glitch."
+    "reasoning": "Despite high customer payment reliability, the invoice remains overdue likely due to a temporary processing glitch.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0138": {
+  {
     "event_id": "EVT-0138",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0007",
@@ -2950,9 +3224,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 88,
-    "reasoning": "Large invoice amount combined with very low payment reliability suggests liquidity constraints at the customer end."
+    "reasoning": "Large invoice amount combined with very low payment reliability suggests liquidity constraints at the customer end.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0139": {
+  {
     "event_id": "EVT-0139",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0017",
@@ -2972,9 +3248,11 @@
     "warnings": [],
     "root_cause": "customer_dispute",
     "confidence": 80,
-    "reasoning": "Multiple reminders over 63 days with no resolution points towards a potential billing or service dispute."
+    "reasoning": "Multiple reminders over 63 days with no resolution points towards a potential billing or service dispute.",
+    "action": "escalate_to_human",
+    "action_reason": "root_cause=customer_dispute -> escalate_to_human"
   },
-  "EVT-0140": {
+  {
     "event_id": "EVT-0140",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0023",
@@ -2994,9 +3272,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 82,
-    "reasoning": "Low payment reliability score despite a low-risk profile indicates temporary cash flow issues."
+    "reasoning": "Low payment reliability score despite a low-risk profile indicates temporary cash flow issues.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0141": {
+  {
     "event_id": "EVT-0141",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0005",
@@ -3016,9 +3296,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "Extended overdue period with low payment reliability and ignored reminders signifies poor communication engagement."
+    "reasoning": "Extended overdue period with low payment reliability and ignored reminders signifies poor communication engagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0142": {
+  {
     "event_id": "EVT-0142",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0003",
@@ -3038,9 +3320,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 78,
-    "reasoning": "The invoice is only one day overdue, suggesting a routine processing delay rather than a persistent failure."
+    "reasoning": "The invoice is only one day overdue, suggesting a routine processing delay rather than a persistent failure.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0143": {
+  {
     "event_id": "EVT-0143",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0018",
@@ -3060,9 +3344,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 70,
-    "reasoning": "A reliable customer with a moderate overdue period likely experienced an update failure in their payment method."
+    "reasoning": "A reliable customer with a moderate overdue period likely experienced an update failure in their payment method.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0144": {
+  {
     "event_id": "EVT-0144",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0005",
@@ -3082,9 +3368,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 84,
-    "reasoning": "Moderate invoice amount and low payment reliability suggest the client is delaying payment due to cash flow."
+    "reasoning": "Moderate invoice amount and low payment reliability suggest the client is delaying payment due to cash flow.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0145": {
+  {
     "event_id": "EVT-0145",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0022",
@@ -3104,9 +3392,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 86,
-    "reasoning": "Three reminders sent to a high-risk micro business with no payment response indicates an unengaged debtor."
+    "reasoning": "Three reminders sent to a high-risk micro business with no payment response indicates an unengaged debtor.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0146": {
+  {
     "event_id": "EVT-0146",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0003",
@@ -3126,9 +3416,11 @@
     "warnings": [],
     "root_cause": "card_expired",
     "confidence": 75,
-    "reasoning": "Recent short-term overdue with moderate reliability points towards a simple expired payment instrument."
+    "reasoning": "Recent short-term overdue with moderate reliability points towards a simple expired payment instrument.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=card_expired -> send_reminder"
   },
-  "EVT-0147": {
+  {
     "event_id": "EVT-0147",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0033",
@@ -3148,9 +3440,11 @@
     "warnings": [],
     "root_cause": "customer_dispute",
     "confidence": 89,
-    "reasoning": "Significantly overdue invoice past 80 days with multiple ignored reminders strongly suggests an underlying dispute."
+    "reasoning": "Significantly overdue invoice past 80 days with multiple ignored reminders strongly suggests an underlying dispute.",
+    "action": "escalate_to_human",
+    "action_reason": "root_cause=customer_dispute -> escalate_to_human"
   },
-  "EVT-0148": {
+  {
     "event_id": "EVT-0148",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0018",
@@ -3170,9 +3464,11 @@
     "warnings": [],
     "root_cause": "gateway_timeout",
     "confidence": 72,
-    "reasoning": "High customer reliability makes a technical transaction failure more probable than intentional default."
+    "reasoning": "High customer reliability makes a technical transaction failure more probable than intentional default.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EVT-0149": {
+  {
     "event_id": "EVT-0149",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0036",
@@ -3192,9 +3488,11 @@
     "warnings": [],
     "root_cause": "customer_dispute",
     "confidence": 83,
-    "reasoning": "High-value invoice with high risk profile and multiple unheeded follow-ups indicates possible billing friction."
+    "reasoning": "High-value invoice with high risk profile and multiple unheeded follow-ups indicates possible billing friction.",
+    "action": "escalate_to_human",
+    "action_reason": "root_cause=customer_dispute -> escalate_to_human"
   },
-  "EVT-0150": {
+  {
     "event_id": "EVT-0150",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0005",
@@ -3214,9 +3512,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 87,
-    "reasoning": "Large invoice value coupled with low payment reliability indicates the client is holding funds due to tight liquidity."
+    "reasoning": "Large invoice value coupled with low payment reliability indicates the client is holding funds due to tight liquidity.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0151": {
+  {
     "event_id": "EVT-0151",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0022",
@@ -3236,9 +3536,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer has low email and WhatsApp engagement rates combined with only a single reminder sent so far for an overdue invoice."
+    "reasoning": "The customer has low email and WhatsApp engagement rates combined with only a single reminder sent so far for an overdue invoice.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0152": {
+  {
     "event_id": "EVT-0152",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0004",
@@ -3258,9 +3560,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 80,
-    "reasoning": "Moderate payment reliability and high days overdue suggest temporary liquidity challenges rather than an active dispute."
+    "reasoning": "Moderate payment reliability and high days overdue suggest temporary liquidity challenges rather than an active dispute.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0153": {
+  {
     "event_id": "EVT-0153",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0021",
@@ -3280,9 +3584,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 75,
-    "reasoning": "No previous reminders have been sent to this responsive channel user, indicating the delay is likely due to lack of outreach."
+    "reasoning": "No previous reminders have been sent to this responsive channel user, indicating the delay is likely due to lack of outreach.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0154": {
+  {
     "event_id": "EVT-0154",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0006",
@@ -3302,9 +3608,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 70,
-    "reasoning": "Despite high payment reliability, the long duration of 78 days overdue points towards cash flow constraints."
+    "reasoning": "Despite high payment reliability, the long duration of 78 days overdue points towards cash flow constraints.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0155": {
+  {
     "event_id": "EVT-0155",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0004",
@@ -3324,9 +3632,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 88,
-    "reasoning": "Multiple reminders sent without recovery despite adequate channel success rates points to persistent customer unresponsiveness."
+    "reasoning": "Multiple reminders sent without recovery despite adequate channel success rates points to persistent customer unresponsiveness.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0156": {
+  {
     "event_id": "EVT-0156",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0033",
@@ -3346,9 +3656,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 82,
-    "reasoning": "Micro business size with moderate payment reliability and 81 days overdue points directly to cash flow limitations."
+    "reasoning": "Micro business size with moderate payment reliability and 81 days overdue points directly to cash flow limitations.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0157": {
+  {
     "event_id": "EVT-0157",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0006",
@@ -3368,9 +3680,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 80,
-    "reasoning": "Despite multiple reminders sent via email, the unrecovered status indicates a lack of active customer engagement."
+    "reasoning": "Despite multiple reminders sent via email, the unrecovered status indicates a lack of active customer engagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0158": {
+  {
     "event_id": "EVT-0158",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0017",
@@ -3390,9 +3704,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 90,
-    "reasoning": "The large invoice amount coupled with medium risk profile and zero prior reminders strongly suggests delayed liquidity."
+    "reasoning": "The large invoice amount coupled with medium risk profile and zero prior reminders strongly suggests delayed liquidity.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0159": {
+  {
     "event_id": "EVT-0159",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0018",
@@ -3412,9 +3728,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 78,
-    "reasoning": "Only 8 days overdue with two previous reminders sent indicates the customer has simply not engaged with the notices yet."
+    "reasoning": "Only 8 days overdue with two previous reminders sent indicates the customer has simply not engaged with the notices yet.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0160": {
+  {
     "event_id": "EVT-0160",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0018",
@@ -3434,9 +3752,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "Three reminders have been sent over 79 days for a small amount, highlighting a lack of responsiveness from the customer."
+    "reasoning": "Three reminders have been sent over 79 days for a small amount, highlighting a lack of responsiveness from the customer.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0161": {
+  {
     "event_id": "EVT-0161",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0026",
@@ -3456,9 +3776,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 88,
-    "reasoning": "Low payment reliability score of 0.34 for this high-risk micro business points heavily toward insufficient funds."
+    "reasoning": "Low payment reliability score of 0.34 for this high-risk micro business points heavily toward insufficient funds.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0162": {
+  {
     "event_id": "EVT-0162",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0019",
@@ -3478,9 +3800,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 72,
-    "reasoning": "A very large invoice amount that remains unpaid despite multiple reminders suggests temporary cash flow strain."
+    "reasoning": "A very large invoice amount that remains unpaid despite multiple reminders suggests temporary cash flow strain.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0163": {
+  {
     "event_id": "EVT-0163",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0005",
@@ -3500,9 +3824,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 85,
-    "reasoning": "Very low payment method reliability score combined with a substantial invoice amount points to a funding shortfall."
+    "reasoning": "Very low payment method reliability score combined with a substantial invoice amount points to a funding shortfall.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0164": {
+  {
     "event_id": "EVT-0164",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0003",
@@ -3522,9 +3848,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 75,
-    "reasoning": "Low payment reliability and 68 days overdue indicate the customer is struggling to clear the balance due to liquidity."
+    "reasoning": "Low payment reliability and 68 days overdue indicate the customer is struggling to clear the balance due to liquidity.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0165": {
+  {
     "event_id": "EVT-0165",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0021",
@@ -3544,9 +3872,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 80,
-    "reasoning": "Multiple reminders sent over 53 days without resolution points to the customer ignoring communications."
+    "reasoning": "Multiple reminders sent over 53 days without resolution points to the customer ignoring communications.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0166": {
+  {
     "event_id": "EVT-0166",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0036",
@@ -3566,9 +3896,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 85,
-    "reasoning": "The customer has multiple overdue reminders sent with high risk profile and no response."
+    "reasoning": "The customer has multiple overdue reminders sent with high risk profile and no response.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0167": {
+  {
     "event_id": "EVT-0167",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0005",
@@ -3588,9 +3920,11 @@
     "warnings": [],
     "root_cause": "insufficient_funds",
     "confidence": 80,
-    "reasoning": "Large overdue invoice amount combined with very low payment method reliability suggests liquidity issues."
+    "reasoning": "Large overdue invoice amount combined with very low payment method reliability suggests liquidity issues.",
+    "action": "retry_later",
+    "action_reason": "root_cause=insufficient_funds -> retry_later"
   },
-  "EVT-0168": {
+  {
     "event_id": "EVT-0168",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0036",
@@ -3610,9 +3944,11 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 90,
-    "reasoning": "Invoice is significantly overdue by 75 days despite prior reminders due to poor collection engagement."
+    "reasoning": "Invoice is significantly overdue by 75 days despite prior reminders due to poor collection engagement.",
+    "action": "offer_discount",
+    "action_reason": "root_cause=no_engagement, amount >= 5000 -> offer_discount"
   },
-  "EVT-0169": {
+  {
     "event_id": "EVT-0169",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0021",
@@ -3632,9 +3968,11 @@
     "warnings": [],
     "root_cause": "customer_dispute",
     "confidence": 75,
-    "reasoning": "The invoice is moderately overdue with no prior reminders sent and missing GSTIN details."
+    "reasoning": "The invoice is moderately overdue with no prior reminders sent and missing GSTIN details.",
+    "action": "escalate_to_human",
+    "action_reason": "root_cause=customer_dispute -> escalate_to_human"
   },
-  "EVT-0170": {
+  {
     "event_id": "EVT-0170",
     "event_type": "overdue_receivable",
     "customer_id": "CUST-0018",
@@ -3654,9 +3992,11 @@
     "warnings": [],
     "root_cause": "customer_dispute",
     "confidence": 70,
-    "reasoning": "Despite high payment reliability, the invoice remains overdue without prior reminders."
+    "reasoning": "Despite high payment reliability, the invoice remains overdue without prior reminders.",
+    "action": "escalate_to_human",
+    "action_reason": "root_cause=customer_dispute -> escalate_to_human"
   },
-  "EDGE-0003": {
+  {
     "event_id": "EDGE-0003",
     "event_type": "failed_payment",
     "customer_id": "CUST-9999",
@@ -3671,9 +4011,11 @@
     ],
     "root_cause": "gateway_timeout",
     "confidence": 70,
-    "reasoning": "Orphan customer ID indicates system synchronization failure typical of a gateway timeout."
+    "reasoning": "Orphan customer ID indicates system synchronization failure typical of a gateway timeout.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EDGE-0004": {
+  {
     "event_id": "EDGE-0004",
     "event_type": "failed_payment",
     "customer_id": "CUST-0003",
@@ -3688,9 +4030,11 @@
     ],
     "root_cause": "gateway_timeout",
     "confidence": 80,
-    "reasoning": "Null timestamp on the transaction record suggests a communication timeout during processing."
+    "reasoning": "Null timestamp on the transaction record suggests a communication timeout during processing.",
+    "action": "retry_now",
+    "action_reason": "root_cause=gateway_timeout -> retry_now"
   },
-  "EDGE-0005": {
+  {
     "event_id": "EDGE-0005",
     "event_type": "failed_payment",
     "customer_id": "CUST-0025",
@@ -3703,6 +4047,8 @@
     "warnings": [],
     "root_cause": "no_engagement",
     "confidence": 95,
-    "reasoning": "Customer has explicitly opted out of communications, preventing any resolution engagement."
+    "reasoning": "Customer has explicitly opted out of communications, preventing any resolution engagement.",
+    "action": "send_reminder",
+    "action_reason": "root_cause=no_engagement, amount < 5000 -> send_reminder"
   }
-}
+]
