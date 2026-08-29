@@ -9,7 +9,8 @@ subscription failures, overdue receivables.
 
 ## Stack
 Python + Streamlit (UI) + Gemini CLI (code generation) + Gemini API (LLM calls 
-for diagnosis/decision) + Razorpay test-mode API (simulated execution)
+for diagnosis/decision/voice) + gTTS (Hinglish voice synthesis) + Razorpay 
+test-mode API (simulated execution)
 
 ## Workflow
 - Claude = planning, exact prompts for Gemini CLI, debugging, architecture decisions
@@ -24,155 +25,184 @@ for diagnosis/decision) + Razorpay test-mode API (simulated execution)
 
 ## Architecture
 Detection Agent (rules) → Diagnosis Agent (Gemini LLM, root cause) → Decision Engine 
-(rules, bounded intervention) → Execution Layer (simulated Razorpay actions) → 
-Guardrails (retry caps, opt-out, stopping rules) → Audit Trail + Streamlit Dashboard 
-(₹ at risk, ₹ recovered, recovery %)
+(rules, bounded intervention) → Guardrails (retry caps, opt-out, business hours, 
+discount caps — pre-execution gate) → Execution Layer (simulated Razorpay actions) → 
+Audit Trail + Streamlit Dashboard (₹ at risk, ₹ recovered, recovery %) + 
+Voice Recovery (Hinglish call simulation for high-value overdue invoices)
 
 ## Progress Log
 
 - Repo init, folder structure, README, architecture doc — DONE
 
-- Dataset generator (data/dataset.py) — DONE (multiple iterations)
-  - v1: basic random dataset — had no correlation, no ground truth
-  - v2: added ground_truth_recoverable, Indian failure codes, B2B gstin/industry fields
-  - v3: fixed urgency_decay_hours bug (per event_type: failed_payment=48, 
-    checkout_abandoned=24, subscription_failed=72, overdue_receivable=336) + 
-    fixed consecutive-failure bug
-  - v4: switched to relative timestamps (intended: based on datetime.now()) + 
-    random.seed(42) for reproducibility
-  - v5 (27/08, real fix): v4's "relative timestamps" claim was FALSE — NOW was 
-    actually hardcoded to `datetime(2026, 8, 25, 10, 0, 0)`, a frozen fixed date. 
-    This silently made all "relative" timestamps stale over time (discovered when 
-    checkout_abandoned events were 56-72h old instead of <24h). Fixed: 
-    `NOW = datetime.now()`. Verified fresh run produces current-relative timestamps.
-  - v6 (27/08, real fix): subscription_failed events (both the 37 random ones and 
-    the 6 reserved-customer sequences) were missing the retry_count field entirely 
-    — only had consecutive_failure_number, never copied to retry_count. Fixed: 
-    added retry_count = same value as consecutive_failure_number in both 
-    generation blocks. Verified: reserved customers now correctly reach retry_count=3.
+- Dataset generator (data/dataset.py) — DONE (multiple iterations, v1-v6, see below)
   - Final dataset: 175 events, 40 customers, data/customers.json + data/sample_data.json
-  - Consecutive-failure customers (reserved, current run): CUST-0034, CUST-0021, 
-    CUST-0029 reach retry_count=3; CUST-0036, CUST-0033, CUST-0028 reach retry_count=2
-  - NOTE: dataset must be regenerated close to demo day (timestamps are now-relative, 
-    not frozen) — re-run `python data/dataset.py` right before final demo/recording.
-  - Located at data/dataset.py (not agents/ — note for consistency)
+  - Key fixes: frozen-NOW-timestamp bug (v5), missing retry_count on subscription 
+    events (v6)
+  - NOTE: dataset must be regenerated close to demo day (timestamps are now-relative) 
+    — re-run `python data/dataset.py` right before final demo/recording
 
-- Detection Agent (agents/detection_agent.py) — DONE, with 2 real bugs found & fixed today
-  - Rule-based flagging per event_type, assigns priority_score
-  - BUG FOUND (27/08): flagged_event dict was built from scratch with only 8 
-    explicit fields, silently dropping retry_count, timestamp, payment_method, 
-    failure_reason, status, ground_truth_recoverable, urgency_decay_hours from 
-    every event. FIXED: now uses `{**event, "amount": amount, ...computed fields}` 
-    to preserve all original fields and layer computed ones on top.
-  - BUG FOUND (27/08): subscription_failed events with retry_count>=3 were being 
-    filtered OUT entirely (`if retry_count < 3: is_at_risk = True`), meaning they 
-    never reached Decision Engine at all — silently defeating the retry-cap 
-    override before it could ever run. FIXED (per decision: Detection Agent should 
-    flag ALL subscription_failed events regardless of retry_count; Decision Engine 
-    alone owns the "what to do about high retries" logic). Detection Agent now 
-    just flags all subscription_failed as at-risk; Decision Engine's global 
-    override handles escalation.
-  - Verified final run: 175 scanned, 174 flagged, 1 skipped (₹0 edge case), 
-    3 warnings (duplicate ID, orphan customer, null timestamp) — all edge cases 
-    confirmed handled, checkout_abandoned now correctly represented (was 0 before 
-    the NOW bug fix, now 40)
+- Detection Agent (agents/detection_agent.py) — DONE
+  - 2 bugs fixed: field-dropping dict rebuild, subscription_failed events wrongly 
+    pre-filtered before reaching Decision Engine
+  - Verified: 175 scanned, 174 flagged, edge cases handled
   - Output: data/flagged_events.json
 
-- Diagnosis Agent (agents/diagnosis_agent.py) — DONE, with 1 real bug found & fixed today
-  - LLM-powered root cause classification via Gemini API
-  - Batches 15 events per API call (reduces ~174 calls → ~12) to fit free-tier 
-    daily quota limits
-  - Model: gemini-flash-lite-latest (gemini-3.6-flash hit 20/day quota cap; 
-    gemini-2.5-flash returned 404 deprecated-for-new-users)
-  - Uses google.generativeai package — DEPRECATED (FutureWarning on every run, 
-    Google has ended support). Still functional, decided to NOT migrate to 
-    google.genai before deadline due to risk of breaking a working pipeline 
-    mid-crunch. Revisit only if there's spare time after core build is done, or 
-    if the old package actually stops working.
-  - BUG FOUND (27/08): diagnosed_cache[event_id] = diag was REPLACING the cached 
-    event with only Gemini's 4 output fields (event_id, root_cause, confidence, 
-    reasoning) + contact_opt_out, discarding retry_count, amount, event_type, 
-    customer_id, etc. from the original event. FIXED: 
-    `diagnosed_cache[event_id] = {**original_event, **diag}` to merge instead 
-    of replace.
-  - Caching to data/diagnosed_events.json (dict keyed by event_id) — skips 
-    already-diagnosed events on re-run. NOTE: because it's a dict keyed by 
-    event_id, the intentional duplicate edge case (EVT-0001 appears twice in 
-    raw dataset) collapses to 1 entry here — this is expected/correct behavior 
-    for the edge-case test, not a bug.
-  - Error handling: failed batches marked diagnosis_failed, batch continues 
-    without crashing
-  - contact_opt_out preserved in output for downstream guardrails
-  - Final verified run (post-fixes): 174/174 diagnosed successfully, 0 failures
+- Diagnosis Agent (agents/diagnosis_agent.py) — DONE
+  - Gemini-based root cause classification, batched (15/call), model 
+    gemini-flash-lite-latest, deprecated google.generativeai SDK (intentional, 
+    not migrating pre-deadline)
+  - 1 bug fixed: cache overwrite was discarding original event fields
+  - Verified: 174/174 diagnosed, 0 failures
   - Output: data/diagnosed_events.json
 
-- Decision Engine (agents/decision_engine.py) — DONE, verified end-to-end today
-  - Maps root_cause -> action using locked mapping table:
-    - card_expired        -> send_reminder
-    - insufficient_funds  -> retry_later
-    - gateway_timeout     -> retry_now
-    - customer_dispute    -> escalate_to_human (always)
-    - no_engagement       -> send_reminder (amount >= 5000 -> offer_discount instead)
-    - diagnosis_failed    -> escalate_to_human (safe fallback)
-    - unrecognized        -> escalate_to_human (safe fallback)
-  - GLOBAL OVERRIDE: if retry_count >= 3 (any root_cause) -> force escalate_to_human
-  - Does NOT read ground_truth_recoverable (reserved for later accuracy scoring only)
-  - Does NOT enforce contact_opt_out — deliberately left to Guardrails (Day 7), 
-    to keep separation of concerns clean. Decision Engine picks the "ideal" action; 
-    Guardrails will veto/downgrade based on opt-out status.
-  - Adds action + action_reason (human-readable) fields, preserves all original fields
-  - Handles missing fields gracefully (missing retry_count -> 0, missing amount -> 0, 
-    missing root_cause -> diagnosis_failed), never crashes
-  - Had initial path bugs (hardcoded 'ai-revenue-recovery/' prefix in file paths 
-    from Gemini CLI's confusion about working directory) — fixed to relative paths
-  - VERIFIED end-to-end on real fixed data: 175 scanned -> 174 flagged -> 174 
-    diagnosed -> 173 decided (1-event dip is the expected duplicate-ID collapse 
-    from Diagnosis Agent's dict cache, not a bug)
-  - VERIFIED retry-cap override specifically: 13 subscription_failed events with 
-    retry_count=3 in this run, ALL 13 correctly assigned action=escalate_to_human
+- Decision Engine (agents/decision_engine.py) — DONE
+  - root_cause → action mapping table (locked), global retry-cap override 
+    (retry_count >= 3 → escalate_to_human regardless of root_cause)
+  - Deliberately does not enforce contact_opt_out (left to Guardrails) or read 
+    ground_truth_recoverable (reserved for scoring)
+  - Verified end-to-end: 175 → 174 flagged → 174 diagnosed → 173 decided (1-event 
+    dip = expected duplicate-ID collapse, not a bug)
   - Output: data/decided_events.json
+
+- Guardrails (agents/guardrails.py) — DONE, refactored as PRE-EXECUTION gate 
+  (runs between Decision Engine and Execution Layer, not after)
+  - Rules (first match wins): (a) opt-out block for customer-facing actions, 
+    (b) retry-cap downgrade to escalate_to_human, (c) business-hours hold 
+    (8AM-9PM IST) for customer-facing actions only, (d) max discount cap (₹5000)
+  - GUARDRAILS_ENABLED kill-switch for emergency disable
+  - 2 real bugs found & fixed today (28/08):
+    - Business-hours rule (c) was incorrectly applying to escalate_to_human 
+      events (should be fully exempt from timing rules) — caused 2 opted-out 
+      escalate_to_human events to have final_action wrongly overwritten to 
+      retry_now/retry_later. FIXED: rule c now only applies to the 4 
+      customer-facing actions.
+    - extra_fields dict was only initialized inside the GUARDRAILS_ENABLED=True 
+      branch but used unconditionally in output construction — caused NameError/
+      guardrail_error crash whenever kill-switch set to False. FIXED: initialize 
+      extra_fields = {} before the if/else.
+  - Verified: 173 processed → 123 approved, 3 blocked (opt-out), 47 held 
+    (business hours), 0 downgraded (retry-cap already handled upstream by 
+    Decision Engine). Kill-switch tested both ON and OFF, confirmed correct.
+  - Output: data/guarded_events.json
+
+- Execution Layer (agents/execution_layer.py) — DONE, reads guarded_events.json 
+  (not decided_events.json directly — refactored after Guardrails became a 
+  pre-execution gate)
+  - Simulates retry charges (weighted random success, more failure at higher 
+    retry_count), reminders, discount offers, human escalation queueing
+  - Reads final_action (post-guardrails) not action; skips simulation entirely 
+    for "blocked"/"held" guardrail_status, marking blocked_by_guardrails / 
+    held_by_guardrails
+  - Verified: 173/173 processed, count matches guarded_events.json, opt-out 
+    events correctly skipped, edge cases (orphan customer, null timestamp) 
+    handled without crashing
+  - Output: data/executed_events.json
+
+- Streamlit App (app.py) — DONE — this is the "Working AI App" deliverable
+  - "Run Batch Pipeline" button: runs all 5 pipeline scripts in sequence via 
+    subprocess, live status per step
+  - Results panel: ₹ At Risk, ₹ Recovered (only successful retry_now/retry_later 
+    counted as real recovered revenue, not reminders/discounts), Recovery %, 
+    Events Processed
+  - Bar charts: execution status breakdown, final action breakdown
+  - Filterable audit trail table (event_type, final_action, execution_status, 
+    guardrail_status, customer_id search)
+  - 2 bugs found & fixed today (28/08):
+    - Stale cache bug: @st.cache_data wasn't invalidated after pipeline re-run, 
+      showing old data in the table after fresh runs. FIXED: st.cache_data.clear() 
+      called after pipeline completes.
+    - Pipeline run logs (per-step status) disappeared after st.rerun() since they 
+      were only rendered inside the button's if-block. FIXED: logs now persisted 
+      to st.session_state and rendered in a collapsible expander outside the 
+      button block, survives reruns.
+
+- Voice Recovery (voice_recovery.py, project root) — DONE — Hinglish voice call 
+  simulation for high-value overdue invoices (secondary differentiator)
+  - Selects highest-value overdue_receivable event with successful 
+    send_reminder/offer_discount action
+  - Two Gemini calls: (1) generates natural Hinglish reminder script matching 
+    recommended_tone field, (2) simulates realistic customer response + 
+    structured promise-to-pay extraction (promise_type, committed_date, confidence)
+  - gTTS generates actual Hinglish audio (mp3) for the agent script
+  - Caching by event_id (same pattern as diagnosis_agent.py)
+  - Integrated into app.py: "🎙️ Voice Recovery Call (Hinglish)" section with 
+    button, audio player, transcript, and color-coded promise-type info box
+  - Bugs found & fixed today (29/08):
+    - Gemini CLI created the file in the WRONG working directory twice (outer 
+      ~/ai-revenue-recovery/ instead of nested ~/ai-revenue-recovery/ai-revenue-recovery/) 
+      and reported false "successfully implemented" both times — classic silent-fail 
+      pattern, always physically verify file existence with ls, don't trust 
+      CLI success claims.
+    - Import bug: script tried `from utils.config import API_KEY` (a name that 
+      doesn't exist — actual utils/config.py exports GEMINI_API_KEY). FIXED to 
+      match diagnosis_agent.py's actual pattern: 
+      `genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))`.
+    - Hardcoded wrong path prefix (`ai-revenue-recovery/data/...`) from the same 
+      nested-folder confusion as decision_engine.py had earlier. FIXED to plain 
+      `data/...` paths.
+    - Amount formatting bug: raw integer amount passed to Gemini prompt caused 
+      Gemini to generate incorrect Indian-style comma placement (e.g. "₹19,8502" 
+      instead of "₹1,98,502"). FIXED by pre-formatting the amount in Python with 
+      a proper Indian-numbering function before interpolating into the prompt, 
+      plus an explicit instruction to Gemini not to reformat it.
+  - Verified: script generates correct Hinglish text with correct ₹1,98,502 
+    formatting, gTTS produces a valid ~168KB mp3, customer response and 
+    promise-to-pay extraction are realistic and structurally correct.
+  - Output: data/voice_calls.json, data/voice_calls/{event_id}_agent.mp3
 
 ## Current blocker (if any)
 none
 
 ## Next task
-Execution Layer — build agents/execution_layer.py: simulate Razorpay actions per 
-the `action` field from Decision Engine (retry charge, send mock reminder 
-notification, etc.), log every action + result for the audit trail.
+Day 10 — Full end-to-end test through the Streamlit app itself (not backend 
+scripts): click through the UI like a judge would — Run Batch Pipeline, verify 
+metrics/charts/audit trail, trigger the Voice Recovery Call button, listen to 
+the audio, check the promise-to-pay display. Fix any UI-level bugs found. 
+Also verify the Voice Recovery button integration in app.py specifically (built 
+but not yet click-tested through the actual dashboard).
 
 ## Key files
-- data/dataset.py — dataset generator (note: lives in data/, not agents/)
-- data/customers.json — 40 customer profiles (risk_profile, contact_opt_out, 
-  channel preferences, B2B fields)
-- data/sample_data.json — 175 events across 4 types, with ground_truth_recoverable 
-  (hidden from agent, used for accuracy scoring later)
+- data/dataset.py — dataset generator
+- data/customers.json, data/sample_data.json — source data (175 events, 40 customers)
 - data/flagged_events.json — output of detection_agent.py
 - data/diagnosed_events.json — output of diagnosis_agent.py
 - data/decided_events.json — output of decision_engine.py
-- agents/detection_agent.py, agents/diagnosis_agent.py, agents/decision_engine.py
-- docs/ARCHITECTURE.md — full pipeline description
+- data/guarded_events.json — output of guardrails.py (pre-execution gate)
+- data/executed_events.json — output of execution_layer.py (final audit trail source)
+- data/voice_calls.json, data/voice_calls/*.mp3 — voice recovery outputs
+- agents/detection_agent.py, agents/diagnosis_agent.py, agents/decision_engine.py, 
+  agents/guardrails.py, agents/execution_layer.py
+- voice_recovery.py — project root, NOT in agents/ (per plan structure)
+- app.py — project root, the Streamlit dashboard ("Working AI App" deliverable)
+- docs/ARCHITECTURE.md — full pipeline description (needs update to reflect 
+  Guardrails now sitting BEFORE Execution Layer, not after)
 
 ## Known nuances to remember
-- ground_truth_recoverable is for LATER accuracy measurement, agent should NOT see 
-  this field when making decisions (verified: decision_engine.py never reads it)
-- 13 customers have contact_opt_out=True with pending events — Guardrails (Day 7) 
-  must respect this; diagnosis/decision agents can still process these events but 
-  must not trigger actual contact
-- Edge cases in sample_data.json: EDGE-0001 (₹0 amount), duplicate event_id "EVT-0001" 
-  (appears twice), EDGE-0003 (orphan customer CUST-9999), EDGE-0004 (null timestamp), 
-  EDGE-0005 — pipeline handles all of these without crashing (verified today)
-- Dataset uses relative timestamps (datetime.now()-based, fixed as of 27/08) + 
-  fixed random.seed(42). MUST regenerate dataset (python data/dataset.py) close to 
-  demo day so timestamps stay within urgency windows — they are NOT self-updating.
-- Diagnosis Agent uses gemini-flash-lite-latest (NOT gemini-3.6-flash or 
-  gemini-2.5-flash — both hit quota/deprecation issues). Batches 15 events per 
-  API call. Uses deprecated google.generativeai SDK on purpose (see above) — 
-  do not "fix" this without deliberate decision to migrate.
-- IMPORTANT LESSON FROM TODAY: multiple agents were silently dropping fields by 
-  building fresh dicts with only their own explicit fields instead of spreading 
-  the original event ({**event, ...}). When adding any NEW agent (Execution 
-  Layer next), always spread the original event object first, then layer new 
-  fields on top — do not reconstruct dicts field-by-field from scratch.
+- ground_truth_recoverable is for LATER accuracy measurement, never read by any 
+  decision-making agent
+- Pipeline order is: Decision Engine → Guardrails → Execution Layer (Guardrails 
+  moved to be a pre-execution gate, not a post-execution auditor — original 
+  architecture doc text listed it after Execution Layer, this was corrected 
+  during implementation)
+- escalate_to_human is exempt from ALL guardrail timing/contact rules — it never 
+  triggers automated customer contact, so opt-out and business-hours checks don't 
+  apply to it. This caused two real bugs when accidentally violated.
+- Dataset uses relative timestamps (datetime.now()-based) + fixed random.seed(42). 
+  MUST regenerate dataset (python data/dataset.py) close to demo day.
+- Diagnosis Agent + Voice Recovery both use gemini-flash-lite-latest, deprecated 
+  google.generativeai SDK (intentional, not migrating pre-deadline), both cache 
+  by event_id to control free-tier quota usage.
+- RECURRING LESSON (applies to every new agent/script going forward): always 
+  spread the original event object first ({**event, ...}) before adding new 
+  fields — multiple agents had silent field-dropping bugs from rebuilding dicts 
+  field-by-field.
+- RECURRING LESSON: Gemini CLI has repeatedly (a) confused the nested working 
+  directory (~/ai-revenue-recovery/ai-revenue-recovery/) and hardcoded wrong 
+  path prefixes, and (b) reported false "successfully implemented/verified" 
+  summaries when the file was never created, created in the wrong location, or 
+  the code had import errors it never actually ran. ALWAYS physically verify 
+  with `ls -la` and by actually running the script and reading real output — 
+  never trust a CLI's success claim without independent verification.
 - Repo path note: working directory is ~/ai-revenue-recovery/ai-revenue-recovery/ 
-  (nested folder) — always cd there before running scripts, and use plain 
-  relative paths like 'data/foo.json' in code (not prefixed with the repo name).
+  (nested folder) — always cd there before running scripts, use plain relative 
+  paths like 'data/foo.json' in code.
