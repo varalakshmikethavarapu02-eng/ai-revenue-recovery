@@ -52,6 +52,7 @@ def simulate_customer_response(script_text, days):
     Simulate a realistic Hinglish customer reply (1-2 sentences) to this reminder.
     The customer should express one of: a promise to pay, a request for more time, or a claim of already having paid.
     Vary naturally based on {days} days overdue.
+    Do not use casual filler address terms like 'bhai', 'yaar', 'boss' — keep the tone natural but neutral, as if speaking to a formal collections representative, without assuming the listener's gender or familiarity level.
     Output only the natural language reply.
     """
     response = model.generate_content(prompt)
@@ -116,7 +117,7 @@ def run_voice_recovery():
         
         # Audio
         audio_path = os.path.join(audio_dir, f"{event_id}_agent.mp3")
-        tts = gTTS(text=script, lang='hi')
+        tts = gTTS(text=script, lang='hi', tld='co.in')
         tts.save(audio_path)
         
         # Customer response

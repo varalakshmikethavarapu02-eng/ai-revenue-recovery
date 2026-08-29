@@ -127,7 +127,30 @@ st.divider()
 
 # Audit Trail Table
 st.subheader("Audit Trail")
-# ... (existing code for audit trail)
+
+# Filter widgets
+c1, c2, c3, c4 = st.columns(4)
+type_filter = c1.multiselect("Event Type", sorted(df['event_type'].unique()))
+action_filter = c2.multiselect("Effective Action", sorted(df['effective_action'].unique()))
+status_filter = c3.multiselect("Execution Status", sorted(df['execution_status'].unique()))
+guardrail_filter = []
+if 'guardrail_status' in df.columns:
+    guardrail_filter = c4.multiselect("Guardrail Status", sorted(df['guardrail_status'].unique()))
+
+customer_search = st.text_input("Search Customer ID")
+
+# Apply filters
+filtered_df = df.copy()
+if type_filter: filtered_df = filtered_df[filtered_df['event_type'].isin(type_filter)]
+if action_filter: filtered_df = filtered_df[filtered_df['effective_action'].isin(action_filter)]
+if status_filter: filtered_df = filtered_df[filtered_df['execution_status'].isin(status_filter)]
+if guardrail_filter: filtered_df = filtered_df[filtered_df['guardrail_status'].isin(guardrail_filter)]
+if customer_search: filtered_df = filtered_df[filtered_df['customer_id'].str.contains(customer_search, case=False, na=False)]
+
+# Table Display
+cols_to_show = [c for c in ['event_id', 'customer_id', 'event_type', 'amount', 'root_cause', 
+                           'action', 'guardrail_status', 'final_action', 'execution_status', 
+                           'execution_notes', 'guardrail_reason'] if c in filtered_df.columns]
 st.dataframe(filtered_df[cols_to_show], use_container_width=True)
 st.caption(f"Showing {len(filtered_df)} of {len(df)} events")
 
@@ -138,7 +161,7 @@ st.subheader("🎙️ Voice Recovery Call (Hinglish)")
 if st.button("Simulate Voice Call for Top Overdue Invoice"):
     with st.status("Running voice simulation...", expanded=True) as status:
         # Use '../voice_recovery.py' to access the file at the project root
-        result = subprocess.run(["python", "../voice_recovery.py"], capture_output=True, text=True)
+        result = subprocess.run(["python", "voice_recovery.py"], capture_output=True, text=True)
         if result.returncode == 0:
             st.text(result.stdout)
             status.update(label="✅ Simulation complete", state="complete")
@@ -147,7 +170,7 @@ if st.button("Simulate Voice Call for Top Overdue Invoice"):
             status.update(label="❌ Simulation failed", state="error")
     st.rerun()
 
-voice_calls_path = "ai-revenue-recovery/data/voice_calls.json"
+voice_calls_path = "data/voice_calls.json"
 if os.path.exists(voice_calls_path):
     with open(voice_calls_path, 'r') as f:
         voice_calls = json.load(f)

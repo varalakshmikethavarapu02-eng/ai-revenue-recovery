@@ -20,7 +20,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256027"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965515"
   },
   {
     "event_id": "EVT-0002",
@@ -46,7 +46,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256052"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965545"
   },
   {
     "event_id": "EVT-0003",
@@ -72,7 +72,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256063"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965556"
   },
   {
     "event_id": "EVT-0004",
@@ -98,7 +98,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256073"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965565"
   },
   {
     "event_id": "EVT-0005",
@@ -124,7 +124,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256082"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965574"
   },
   {
     "event_id": "EVT-0006",
@@ -150,7 +150,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256090"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965583"
   },
   {
     "event_id": "EVT-0007",
@@ -176,7 +176,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256098"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965591"
   },
   {
     "event_id": "EVT-0008",
@@ -202,7 +202,7 @@
     "guardrail_status": "blocked",
     "final_action": "send_reminder",
     "guardrail_reason": "contact_opt_out is True",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256102"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965595"
   },
   {
     "event_id": "EVT-0009",
@@ -228,7 +228,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256110"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965606"
   },
   {
     "event_id": "EVT-0010",
@@ -254,7 +254,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256118"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965614"
   },
   {
     "event_id": "EVT-0011",
@@ -280,7 +280,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256129"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965625"
   },
   {
     "event_id": "EVT-0012",
@@ -306,7 +306,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256139"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965633"
   },
   {
     "event_id": "EVT-0013",
@@ -332,7 +332,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256147"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965640"
   },
   {
     "event_id": "EVT-0014",
@@ -358,7 +358,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256154"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965648"
   },
   {
     "event_id": "EVT-0015",
@@ -384,7 +384,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256164"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965658"
   },
   {
     "event_id": "EVT-0016",
@@ -410,7 +410,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256171"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965665"
   },
   {
     "event_id": "EVT-0017",
@@ -436,7 +436,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256181"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965675"
   },
   {
     "event_id": "EVT-0018",
@@ -462,7 +462,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256189"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965683"
   },
   {
     "event_id": "EVT-0019",
@@ -488,7 +488,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256196"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965690"
   },
   {
     "event_id": "EVT-0020",
@@ -514,7 +514,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256204"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965697"
   },
   {
     "event_id": "EVT-0021",
@@ -540,7 +540,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256211"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965705"
   },
   {
     "event_id": "EVT-0022",
@@ -566,7 +566,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256221"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965715"
   },
   {
     "event_id": "EVT-0023",
@@ -592,7 +592,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256228"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965729"
   },
   {
     "event_id": "EVT-0024",
@@ -618,7 +618,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256236"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965744"
   },
   {
     "event_id": "EVT-0025",
@@ -644,7 +644,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256243"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965762"
   },
   {
     "event_id": "EVT-0026",
@@ -670,7 +670,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256251"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965791"
   },
   {
     "event_id": "EVT-0027",
@@ -696,7 +696,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256260"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965807"
   },
   {
     "event_id": "EVT-0028",
@@ -722,7 +722,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256268"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965818"
   },
   {
     "event_id": "EVT-0029",
@@ -748,7 +748,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256275"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965825"
   },
   {
     "event_id": "EVT-0030",
@@ -774,7 +774,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256282"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965833"
   },
   {
     "event_id": "EVT-0031",
@@ -800,7 +800,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256289"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965840"
   },
   {
     "event_id": "EVT-0032",
@@ -826,7 +826,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256299"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965850"
   },
   {
     "event_id": "EVT-0033",
@@ -852,7 +852,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256306"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965857"
   },
   {
     "event_id": "EVT-0034",
@@ -878,7 +878,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256314"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965865"
   },
   {
     "event_id": "EVT-0035",
@@ -904,7 +904,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256321"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965873"
   },
   {
     "event_id": "EVT-0036",
@@ -930,7 +930,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256328"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965880"
   },
   {
     "event_id": "EVT-0037",
@@ -956,7 +956,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256336"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965887"
   },
   {
     "event_id": "EVT-0038",
@@ -982,7 +982,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256345"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965896"
   },
   {
     "event_id": "EVT-0039",
@@ -1008,7 +1008,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256352"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965904"
   },
   {
     "event_id": "EVT-0040",
@@ -1034,7 +1034,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256360"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965911"
   },
   {
     "event_id": "EVT-0041",
@@ -1062,7 +1062,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256367"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965921"
   },
   {
     "event_id": "EVT-0042",
@@ -1090,7 +1090,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256378"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965932"
   },
   {
     "event_id": "EVT-0043",
@@ -1118,7 +1118,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256385"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965939"
   },
   {
     "event_id": "EVT-0044",
@@ -1146,7 +1146,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256395"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965946"
   },
   {
     "event_id": "EVT-0045",
@@ -1174,7 +1174,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256402"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965954"
   },
   {
     "event_id": "EVT-0046",
@@ -1202,7 +1202,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256409"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965961"
   },
   {
     "event_id": "EVT-0047",
@@ -1230,7 +1230,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256419"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965971"
   },
   {
     "event_id": "EVT-0048",
@@ -1258,7 +1258,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256426"
+    "guardrail_timestamp": "2026-08-29T10:19:42.965988"
   },
   {
     "event_id": "EVT-0049",
@@ -1286,7 +1286,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256434"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966000"
   },
   {
     "event_id": "EVT-0050",
@@ -1314,7 +1314,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256441"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966008"
   },
   {
     "event_id": "EVT-0051",
@@ -1342,7 +1342,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256448"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966015"
   },
   {
     "event_id": "EVT-0052",
@@ -1370,7 +1370,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256457"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966025"
   },
   {
     "event_id": "EVT-0053",
@@ -1398,7 +1398,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256461"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966029"
   },
   {
     "event_id": "EVT-0054",
@@ -1426,7 +1426,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256468"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966037"
   },
   {
     "event_id": "EVT-0055",
@@ -1454,7 +1454,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256476"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966045"
   },
   {
     "event_id": "EVT-0056",
@@ -1482,7 +1482,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256483"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966052"
   },
   {
     "event_id": "EVT-0057",
@@ -1510,7 +1510,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256492"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966061"
   },
   {
     "event_id": "EVT-0058",
@@ -1538,7 +1538,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256499"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966068"
   },
   {
     "event_id": "EVT-0059",
@@ -1566,7 +1566,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256506"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966075"
   },
   {
     "event_id": "EVT-0060",
@@ -1594,7 +1594,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256514"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966083"
   },
   {
     "event_id": "EVT-0061",
@@ -1622,7 +1622,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256522"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966091"
   },
   {
     "event_id": "EVT-0062",
@@ -1650,7 +1650,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256529"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966098"
   },
   {
     "event_id": "EVT-0063",
@@ -1678,7 +1678,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256539"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966108"
   },
   {
     "event_id": "EVT-0064",
@@ -1706,7 +1706,7 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256546"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966116"
   },
   {
     "event_id": "EVT-0065",
@@ -1734,7 +1734,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256553"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966123"
   },
   {
     "event_id": "EVT-0066",
@@ -1762,7 +1762,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256565"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966136"
   },
   {
     "event_id": "EVT-0067",
@@ -1790,7 +1790,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256572"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966143"
   },
   {
     "event_id": "EVT-0068",
@@ -1818,7 +1818,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256582"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966152"
   },
   {
     "event_id": "EVT-0069",
@@ -1846,7 +1846,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256589"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966160"
   },
   {
     "event_id": "EVT-0070",
@@ -1874,7 +1874,7 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256597"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966167"
   },
   {
     "event_id": "EVT-0071",
@@ -1902,7 +1902,7 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256604"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966175"
   },
   {
     "event_id": "EVT-0072",
@@ -1930,7 +1930,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256611"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966182"
   },
   {
     "event_id": "EVT-0073",
@@ -1958,7 +1958,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256620"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966192"
   },
   {
     "event_id": "EVT-0074",
@@ -1986,7 +1986,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256628"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966201"
   },
   {
     "event_id": "EVT-0075",
@@ -2014,7 +2014,7 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256635"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966208"
   },
   {
     "event_id": "EVT-0076",
@@ -2042,7 +2042,7 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256642"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966216"
   },
   {
     "event_id": "EVT-0077",
@@ -2070,7 +2070,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256652"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966224"
   },
   {
     "event_id": "EVT-0078",
@@ -2098,7 +2098,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256661"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966233"
   },
   {
     "event_id": "EVT-0079",
@@ -2126,7 +2126,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256669"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966241"
   },
   {
     "event_id": "EVT-0080",
@@ -2154,7 +2154,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256676"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966248"
   },
   {
     "event_id": "EVT-0081",
@@ -2182,7 +2182,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256684"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966255"
   },
   {
     "event_id": "EVT-0082",
@@ -2210,7 +2210,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256688"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966259"
   },
   {
     "event_id": "EVT-0083",
@@ -2238,7 +2238,7 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256695"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966266"
   },
   {
     "event_id": "EVT-0084",
@@ -2266,7 +2266,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256705"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966275"
   },
   {
     "event_id": "EVT-0085",
@@ -2294,7 +2294,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256708"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966279"
   },
   {
     "event_id": "EVT-0086",
@@ -2322,7 +2322,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256715"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966286"
   },
   {
     "event_id": "EVT-0087",
@@ -2350,7 +2350,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256719"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966290"
   },
   {
     "event_id": "EVT-0088",
@@ -2378,7 +2378,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256726"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966297"
   },
   {
     "event_id": "EVT-0089",
@@ -2406,7 +2406,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256732"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966302"
   },
   {
     "event_id": "EVT-0090",
@@ -2434,7 +2434,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256739"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966310"
   },
   {
     "event_id": "EVT-0091",
@@ -2462,7 +2462,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256746"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966317"
   },
   {
     "event_id": "EVT-0092",
@@ -2490,7 +2490,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256750"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966321"
   },
   {
     "event_id": "EVT-0093",
@@ -2518,7 +2518,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256757"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966328"
   },
   {
     "event_id": "EVT-0094",
@@ -2546,7 +2546,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256767"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966337"
   },
   {
     "event_id": "EVT-0095",
@@ -2574,7 +2574,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256774"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966344"
   },
   {
     "event_id": "EVT-0096",
@@ -2602,7 +2602,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256781"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966352"
   },
   {
     "event_id": "EVT-0097",
@@ -2630,7 +2630,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256788"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966359"
   },
   {
     "event_id": "EVT-0098",
@@ -2658,7 +2658,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256797"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966368"
   },
   {
     "event_id": "EVT-0099",
@@ -2686,7 +2686,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256801"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966372"
   },
   {
     "event_id": "EVT-0100",
@@ -2714,7 +2714,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256808"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966379"
   },
   {
     "event_id": "EVT-0101",
@@ -2742,7 +2742,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256815"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966387"
   },
   {
     "event_id": "EVT-0102",
@@ -2770,7 +2770,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256819"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966390"
   },
   {
     "event_id": "EVT-0103",
@@ -2798,7 +2798,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256829"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966400"
   },
   {
     "event_id": "EVT-0104",
@@ -2826,7 +2826,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256836"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966407"
   },
   {
     "event_id": "EVT-0105",
@@ -2854,7 +2854,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256839"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966410"
   },
   {
     "event_id": "EVT-0106",
@@ -2882,7 +2882,7 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256847"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966418"
   },
   {
     "event_id": "EVT-0107",
@@ -2910,7 +2910,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256854"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966425"
   },
   {
     "event_id": "EVT-0108",
@@ -2938,7 +2938,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256861"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966433"
   },
   {
     "event_id": "EVT-0109",
@@ -2966,7 +2966,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256870"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966442"
   },
   {
     "event_id": "EVT-0110",
@@ -2994,7 +2994,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256878"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966450"
   },
   {
     "event_id": "EVT-0111",
@@ -3022,7 +3022,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256885"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966459"
   },
   {
     "event_id": "EVT-0112",
@@ -3050,7 +3050,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256894"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966468"
   },
   {
     "event_id": "EVT-0113",
@@ -3078,7 +3078,7 @@
     "guardrail_status": "blocked",
     "final_action": "retry_later",
     "guardrail_reason": "contact_opt_out is True",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256898"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966472"
   },
   {
     "event_id": "EVT-0114",
@@ -3106,7 +3106,7 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256905"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966480"
   },
   {
     "event_id": "EVT-0115",
@@ -3134,7 +3134,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256911"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966483"
   },
   {
     "event_id": "EVT-0116",
@@ -3162,7 +3162,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256915"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966487"
   },
   {
     "event_id": "EVT-0117",
@@ -3190,7 +3190,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256924"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966497"
   },
   {
     "event_id": "EVT-0118",
@@ -3218,7 +3218,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256933"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966506"
   },
   {
     "event_id": "EVT-0119",
@@ -3246,7 +3246,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256940"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966513"
   },
   {
     "event_id": "EVT-0120",
@@ -3274,7 +3274,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256944"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966517"
   },
   {
     "event_id": "EVT-0121",
@@ -3302,7 +3302,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256951"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966524"
   },
   {
     "event_id": "EVT-0122",
@@ -3330,7 +3330,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256958"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966531"
   },
   {
     "event_id": "EVT-0123",
@@ -3358,7 +3358,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256970"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966542"
   },
   {
     "event_id": "EVT-0124",
@@ -3386,7 +3386,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256977"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966549"
   },
   {
     "event_id": "EVT-0125",
@@ -3414,7 +3414,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256981"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966553"
   },
   {
     "event_id": "EVT-0126",
@@ -3442,7 +3442,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256988"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966560"
   },
   {
     "event_id": "EVT-0127",
@@ -3470,7 +3470,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.256995"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966568"
   },
   {
     "event_id": "EVT-0128",
@@ -3498,7 +3498,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257000"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966573"
   },
   {
     "event_id": "EVT-0129",
@@ -3526,7 +3526,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257007"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966581"
   },
   {
     "event_id": "EVT-0130",
@@ -3554,7 +3554,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257015"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966588"
   },
   {
     "event_id": "EVT-0131",
@@ -3582,7 +3582,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257022"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966595"
   },
   {
     "event_id": "EVT-0132",
@@ -3610,7 +3610,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257031"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966604"
   },
   {
     "event_id": "EVT-0133",
@@ -3638,7 +3638,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "discount capped at \u20b95000 max",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257039",
+    "guardrail_timestamp": "2026-08-29T10:19:42.966612",
     "capped_discount_amount": 5000
   },
   {
@@ -3667,7 +3667,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257044"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966616"
   },
   {
     "event_id": "EVT-0135",
@@ -3695,7 +3695,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257047"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966619"
   },
   {
     "event_id": "EVT-0136",
@@ -3723,7 +3723,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257055"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966626"
   },
   {
     "event_id": "EVT-0137",
@@ -3751,7 +3751,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257065"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966636"
   },
   {
     "event_id": "EVT-0138",
@@ -3779,7 +3779,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257072"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966643"
   },
   {
     "event_id": "EVT-0139",
@@ -3807,7 +3807,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257076"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966647"
   },
   {
     "event_id": "EVT-0140",
@@ -3835,7 +3835,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257083"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966654"
   },
   {
     "event_id": "EVT-0141",
@@ -3863,7 +3863,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "discount capped at \u20b95000 max",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257090",
+    "guardrail_timestamp": "2026-08-29T10:19:42.966662",
     "capped_discount_amount": 5000
   },
   {
@@ -3892,7 +3892,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257100"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966672"
   },
   {
     "event_id": "EVT-0143",
@@ -3920,7 +3920,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257107"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966679"
   },
   {
     "event_id": "EVT-0144",
@@ -3948,7 +3948,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257114"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966687"
   },
   {
     "event_id": "EVT-0145",
@@ -3976,7 +3976,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257121"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966694"
   },
   {
     "event_id": "EVT-0146",
@@ -4004,7 +4004,7 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257128"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966701"
   },
   {
     "event_id": "EVT-0147",
@@ -4032,7 +4032,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257132"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966704"
   },
   {
     "event_id": "EVT-0148",
@@ -4060,7 +4060,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257141"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966714"
   },
   {
     "event_id": "EVT-0149",
@@ -4088,7 +4088,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257145"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966717"
   },
   {
     "event_id": "EVT-0150",
@@ -4116,7 +4116,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257152"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966727"
   },
   {
     "event_id": "EVT-0151",
@@ -4144,7 +4144,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257160"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966734"
   },
   {
     "event_id": "EVT-0152",
@@ -4172,7 +4172,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257172"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966744"
   },
   {
     "event_id": "EVT-0153",
@@ -4200,7 +4200,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257180"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966751"
   },
   {
     "event_id": "EVT-0154",
@@ -4228,7 +4228,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257187"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966759"
   },
   {
     "event_id": "EVT-0155",
@@ -4256,7 +4256,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257195"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966766"
   },
   {
     "event_id": "EVT-0156",
@@ -4284,7 +4284,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257202"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966774"
   },
   {
     "event_id": "EVT-0157",
@@ -4312,7 +4312,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257212"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966784"
   },
   {
     "event_id": "EVT-0158",
@@ -4340,7 +4340,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257220"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966792"
   },
   {
     "event_id": "EVT-0159",
@@ -4368,7 +4368,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257227"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966799"
   },
   {
     "event_id": "EVT-0160",
@@ -4396,7 +4396,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257234"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966806"
   },
   {
     "event_id": "EVT-0161",
@@ -4424,7 +4424,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257242"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966814"
   },
   {
     "event_id": "EVT-0162",
@@ -4452,7 +4452,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257252"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966824"
   },
   {
     "event_id": "EVT-0163",
@@ -4480,7 +4480,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257259"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966831"
   },
   {
     "event_id": "EVT-0164",
@@ -4508,7 +4508,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257266"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966838"
   },
   {
     "event_id": "EVT-0165",
@@ -4536,7 +4536,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257273"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966845"
   },
   {
     "event_id": "EVT-0166",
@@ -4564,7 +4564,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "discount capped at \u20b95000 max",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257280",
+    "guardrail_timestamp": "2026-08-29T10:19:42.966853",
     "capped_discount_amount": 5000
   },
   {
@@ -4593,7 +4593,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257288"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966861"
   },
   {
     "event_id": "EVT-0168",
@@ -4621,7 +4621,7 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "discount capped at \u20b95000 max",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257298",
+    "guardrail_timestamp": "2026-08-29T10:19:42.966871",
     "capped_discount_amount": 5000
   },
   {
@@ -4650,7 +4650,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257304"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966877"
   },
   {
     "event_id": "EVT-0170",
@@ -4678,7 +4678,7 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257308"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966880"
   },
   {
     "event_id": "EDGE-0003",
@@ -4701,7 +4701,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257315"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966887"
   },
   {
     "event_id": "EDGE-0004",
@@ -4724,7 +4724,7 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257319"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966891"
   },
   {
     "event_id": "EDGE-0005",
@@ -4745,6 +4745,6 @@
     "guardrail_status": "blocked",
     "final_action": "send_reminder",
     "guardrail_reason": "contact_opt_out is True",
-    "guardrail_timestamp": "2026-08-28T10:31:43.257322"
+    "guardrail_timestamp": "2026-08-29T10:19:42.966895"
   }
 ]

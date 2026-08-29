@@ -6,12 +6,12 @@
     "amount": 198502,
     "days_overdue": 68,
     "recommended_tone": "formal",
-    "agent_script_text": "Namaskar, hum aapko ek important reminder dene ke liye call kar rahe hain regarding aapka pending invoice amount \u20b91,98,502 jo ki abhi 68 days overdue chal raha hai. Aapko politely request karte hain ki aap is payment ko \u091c\u0932\u094d\u0926 se \u091c\u0932\u094d\u0926 clear kar dein. Aapke cooperation ke liye thanks.",
+    "agent_script_text": "Namaskar sir, hum aapko ek important reminder ke liye call kar rahe hain regarding aapka overdue payment. Aapka \u20b91,98,502 ka invoice abhi 68 days overdue chal raha hai. Kripya is payment ko jaldi se jaldi clear karne ki kripa karein. Aapke cooperation ke liye dhanyawad.",
     "agent_audio_path": "data/voice_calls/EVT-0141_agent.mp3",
-    "customer_response_text": "Haan bhai pata hai, thoda financial tight chal raha hai isliye delay ho gaya, main koshish karta hoon ki next week tak yeh amount clear kar doon.",
+    "customer_response_text": "Itna purana invoice hai toh main check karta hoon, yeh payment next week tak pakka clear ho jayegi.",
     "promise_type": "promise_to_pay",
     "committed_date": null,
     "extraction_confidence": 85,
-    "call_timestamp": "2026-08-29T09:53:46.686029"
+    "call_timestamp": "2026-08-29T10:43:22.520140"
   }
 }
