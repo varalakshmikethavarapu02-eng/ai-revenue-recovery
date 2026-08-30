@@ -20,9 +20,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965515",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518335",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.070963",
+    "execution_timestamp": "2026-08-30T19:03:06.617870",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -52,9 +52,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965545",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518358",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071000",
+    "execution_timestamp": "2026-08-30T19:03:06.617897",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -82,12 +82,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965556",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071013",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518368",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.617907",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -114,9 +114,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965565",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518376",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071019",
+    "execution_timestamp": "2026-08-30T19:03:06.617911",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -144,9 +144,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965574",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518385",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071026",
+    "execution_timestamp": "2026-08-30T19:03:06.617916",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -176,9 +176,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965583",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518392",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071031",
+    "execution_timestamp": "2026-08-30T19:03:06.617920",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -206,12 +206,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965591",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071036",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518399",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.617924",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -238,9 +238,9 @@
     "guardrail_status": "blocked",
     "final_action": "send_reminder",
     "guardrail_reason": "contact_opt_out is True",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965595",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518403",
     "execution_status": "blocked_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071045",
+    "execution_timestamp": "2026-08-30T19:03:06.617931",
     "execution_notes": "Blocked by guardrails.",
     "execution_details": {}
   },
@@ -268,12 +268,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965606",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071051",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518415",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.617935",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -300,9 +300,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965614",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518427",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071056",
+    "execution_timestamp": "2026-08-30T19:03:06.617939",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -330,9 +330,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965625",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518442",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071060",
+    "execution_timestamp": "2026-08-30T19:03:06.617942",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -360,9 +360,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965633",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518452",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071065",
+    "execution_timestamp": "2026-08-30T19:03:06.617945",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -390,9 +390,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965640",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518462",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071072",
+    "execution_timestamp": "2026-08-30T19:03:06.617950",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -420,9 +420,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965648",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518468",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071077",
+    "execution_timestamp": "2026-08-30T19:03:06.617954",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -450,9 +450,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965658",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518475",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071082",
+    "execution_timestamp": "2026-08-30T19:03:06.617959",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -482,9 +482,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965665",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518481",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071087",
+    "execution_timestamp": "2026-08-30T19:03:06.617963",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -512,9 +512,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965675",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518490",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071091",
+    "execution_timestamp": "2026-08-30T19:03:06.617970",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -542,12 +542,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965683",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071102",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518496",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.617978",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -574,12 +574,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965690",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071108",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518503",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.617983",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -606,9 +606,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965697",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518509",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071113",
+    "execution_timestamp": "2026-08-30T19:03:06.617987",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -636,9 +636,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965705",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518516",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071117",
+    "execution_timestamp": "2026-08-30T19:03:06.617992",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -666,9 +666,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965715",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518524",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071122",
+    "execution_timestamp": "2026-08-30T19:03:06.617997",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -698,9 +698,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965729",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518531",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071129",
+    "execution_timestamp": "2026-08-30T19:03:06.618002",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -728,9 +728,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965744",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518537",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071134",
+    "execution_timestamp": "2026-08-30T19:03:06.618006",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -758,12 +758,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965762",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071139",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518544",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618009",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -790,9 +790,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965791",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518550",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071145",
+    "execution_timestamp": "2026-08-30T19:03:06.618013",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -822,9 +822,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965807",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518558",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071153",
+    "execution_timestamp": "2026-08-30T19:03:06.618017",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -854,9 +854,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965818",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518565",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071157",
+    "execution_timestamp": "2026-08-30T19:03:06.618023",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -886,9 +886,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965825",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518571",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071164",
+    "execution_timestamp": "2026-08-30T19:03:06.618028",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -918,12 +918,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965833",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071169",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518577",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618032",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -950,9 +950,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965840",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518583",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071174",
+    "execution_timestamp": "2026-08-30T19:03:06.618035",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -980,9 +980,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965850",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518592",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071181",
+    "execution_timestamp": "2026-08-30T19:03:06.618038",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -1012,9 +1012,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965857",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518598",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071187",
+    "execution_timestamp": "2026-08-30T19:03:06.618041",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1042,9 +1042,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965865",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518605",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071197",
+    "execution_timestamp": "2026-08-30T19:03:06.618047",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -1074,9 +1074,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965873",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518611",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071203",
+    "execution_timestamp": "2026-08-30T19:03:06.618050",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1104,9 +1104,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965880",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518617",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071208",
+    "execution_timestamp": "2026-08-30T19:03:06.618053",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1134,9 +1134,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965887",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518624",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071215",
+    "execution_timestamp": "2026-08-30T19:03:06.618057",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -1166,12 +1166,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965896",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071221",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518632",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.618060",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -1198,9 +1198,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965904",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518639",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071229",
+    "execution_timestamp": "2026-08-30T19:03:06.618065",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1228,12 +1228,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965911",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071234",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518645",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618069",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -1262,9 +1262,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965921",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518654",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071240",
+    "execution_timestamp": "2026-08-30T19:03:06.618072",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1294,9 +1294,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965932",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518662",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071246",
+    "execution_timestamp": "2026-08-30T19:03:06.618075",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1326,9 +1326,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965939",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518669",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071252",
+    "execution_timestamp": "2026-08-30T19:03:06.618079",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -1360,9 +1360,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965946",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518675",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071260",
+    "execution_timestamp": "2026-08-30T19:03:06.618084",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1392,9 +1392,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965954",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518682",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071265",
+    "execution_timestamp": "2026-08-30T19:03:06.618088",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -1426,9 +1426,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965961",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518688",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071270",
+    "execution_timestamp": "2026-08-30T19:03:06.618091",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -1460,9 +1460,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965971",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518696",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071274",
+    "execution_timestamp": "2026-08-30T19:03:06.618094",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1492,9 +1492,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.965988",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518703",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071279",
+    "execution_timestamp": "2026-08-30T19:03:06.618097",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1524,12 +1524,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966000",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071287",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518709",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.618103",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -1558,9 +1558,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966008",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518715",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071294",
+    "execution_timestamp": "2026-08-30T19:03:06.618108",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1590,9 +1590,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966015",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518721",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071299",
+    "execution_timestamp": "2026-08-30T19:03:06.618112",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -1624,9 +1624,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966025",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518729",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071304",
+    "execution_timestamp": "2026-08-30T19:03:06.618115",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -1658,9 +1658,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966029",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518732",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071311",
+    "execution_timestamp": "2026-08-30T19:03:06.618119",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -1692,12 +1692,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966037",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071317",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518739",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618123",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -1726,12 +1726,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966045",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071328",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518745",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618129",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -1760,9 +1760,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966052",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518751",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071335",
+    "execution_timestamp": "2026-08-30T19:03:06.618132",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -1794,9 +1794,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966061",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518759",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071341",
+    "execution_timestamp": "2026-08-30T19:03:06.618137",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -1828,12 +1828,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966068",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071345",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518766",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618141",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -1862,9 +1862,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966075",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518772",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071350",
+    "execution_timestamp": "2026-08-30T19:03:06.618144",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1894,9 +1894,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966083",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518778",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071362",
+    "execution_timestamp": "2026-08-30T19:03:06.618152",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -1928,9 +1928,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966091",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518786",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071367",
+    "execution_timestamp": "2026-08-30T19:03:06.618155",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -1962,9 +1962,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966098",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518792",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071371",
+    "execution_timestamp": "2026-08-30T19:03:06.618159",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -1994,9 +1994,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966108",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518801",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071376",
+    "execution_timestamp": "2026-08-30T19:03:06.618162",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -2028,9 +2028,9 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966116",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518811",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071380",
+    "execution_timestamp": "2026-08-30T19:03:06.618165",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2060,9 +2060,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966123",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518818",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071385",
+    "execution_timestamp": "2026-08-30T19:03:06.618170",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2092,9 +2092,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966136",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518824",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071389",
+    "execution_timestamp": "2026-08-30T19:03:06.618174",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2124,9 +2124,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966143",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518830",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071393",
+    "execution_timestamp": "2026-08-30T19:03:06.618177",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -2158,9 +2158,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966152",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518839",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071397",
+    "execution_timestamp": "2026-08-30T19:03:06.618180",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -2192,9 +2192,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966160",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518845",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071401",
+    "execution_timestamp": "2026-08-30T19:03:06.618186",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -2226,9 +2226,9 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966167",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518851",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071409",
+    "execution_timestamp": "2026-08-30T19:03:06.618191",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2258,9 +2258,9 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966175",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518858",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071412",
+    "execution_timestamp": "2026-08-30T19:03:06.618194",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2290,9 +2290,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966182",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518864",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071416",
+    "execution_timestamp": "2026-08-30T19:03:06.618198",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2322,9 +2322,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966192",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518872",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071420",
+    "execution_timestamp": "2026-08-30T19:03:06.618201",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -2356,9 +2356,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966201",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518880",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071423",
+    "execution_timestamp": "2026-08-30T19:03:06.618204",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -2390,9 +2390,9 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966208",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518887",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071427",
+    "execution_timestamp": "2026-08-30T19:03:06.618207",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2422,9 +2422,9 @@
     "guardrail_status": "held",
     "final_action": "offer_discount",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966216",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518893",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071432",
+    "execution_timestamp": "2026-08-30T19:03:06.618212",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2454,9 +2454,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966224",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518899",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071436",
+    "execution_timestamp": "2026-08-30T19:03:06.618216",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -2488,9 +2488,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966233",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518908",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071440",
+    "execution_timestamp": "2026-08-30T19:03:06.618219",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -2522,9 +2522,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966241",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518915",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071443",
+    "execution_timestamp": "2026-08-30T19:03:06.618222",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -2556,9 +2556,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966248",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518921",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071447",
+    "execution_timestamp": "2026-08-30T19:03:06.618226",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -2590,9 +2590,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966255",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518927",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071454",
+    "execution_timestamp": "2026-08-30T19:03:06.618231",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2622,9 +2622,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966259",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518931",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071459",
+    "execution_timestamp": "2026-08-30T19:03:06.618234",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -2656,9 +2656,9 @@
     "guardrail_status": "held",
     "final_action": "retry_now",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966266",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518937",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071464",
+    "execution_timestamp": "2026-08-30T19:03:06.618238",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2688,9 +2688,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966275",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518945",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071471",
+    "execution_timestamp": "2026-08-30T19:03:06.618241",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -2722,9 +2722,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966279",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518949",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071477",
+    "execution_timestamp": "2026-08-30T19:03:06.618244",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -2756,12 +2756,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966286",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071484",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518956",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618251",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -2790,9 +2790,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966290",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518960",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071488",
+    "execution_timestamp": "2026-08-30T19:03:06.618255",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -2824,12 +2824,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966297",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071493",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518966",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.618258",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -2858,9 +2858,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966302",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518971",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071496",
+    "execution_timestamp": "2026-08-30T19:03:06.618262",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -2892,9 +2892,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966310",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518977",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071500",
+    "execution_timestamp": "2026-08-30T19:03:06.618265",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2924,9 +2924,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966317",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518983",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071506",
+    "execution_timestamp": "2026-08-30T19:03:06.618270",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -2956,9 +2956,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966321",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518986",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071510",
+    "execution_timestamp": "2026-08-30T19:03:06.618273",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -2990,9 +2990,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966328",
+    "guardrail_timestamp": "2026-08-30T19:03:06.518993",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071514",
+    "execution_timestamp": "2026-08-30T19:03:06.618276",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -3022,9 +3022,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966337",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519001",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071518",
+    "execution_timestamp": "2026-08-30T19:03:06.618280",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -3056,9 +3056,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966344",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519008",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071524",
+    "execution_timestamp": "2026-08-30T19:03:06.618285",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -3088,9 +3088,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966352",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519014",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071528",
+    "execution_timestamp": "2026-08-30T19:03:06.618288",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -3122,9 +3122,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966359",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519020",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071532",
+    "execution_timestamp": "2026-08-30T19:03:06.618292",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -3156,9 +3156,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966368",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519028",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071536",
+    "execution_timestamp": "2026-08-30T19:03:06.618296",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -3190,9 +3190,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966372",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519032",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071543",
+    "execution_timestamp": "2026-08-30T19:03:06.618301",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -3224,12 +3224,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966379",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071547",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519038",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.618305",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -3258,12 +3258,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966387",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071553",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519044",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.618310",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -3292,9 +3292,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966390",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519047",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071557",
+    "execution_timestamp": "2026-08-30T19:03:06.618314",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -3326,9 +3326,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966400",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519055",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071561",
+    "execution_timestamp": "2026-08-30T19:03:06.618317",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -3358,9 +3358,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966407",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519061",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071564",
+    "execution_timestamp": "2026-08-30T19:03:06.618320",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -3392,9 +3392,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966410",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519064",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071567",
+    "execution_timestamp": "2026-08-30T19:03:06.618323",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -3426,9 +3426,9 @@
     "guardrail_status": "held",
     "final_action": "send_reminder",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966418",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519071",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071580",
+    "execution_timestamp": "2026-08-30T19:03:06.618330",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -3458,9 +3458,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966425",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519077",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071584",
+    "execution_timestamp": "2026-08-30T19:03:06.618334",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -3490,9 +3490,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966433",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519083",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071588",
+    "execution_timestamp": "2026-08-30T19:03:06.618337",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -3524,9 +3524,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966442",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519091",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071592",
+    "execution_timestamp": "2026-08-30T19:03:06.618340",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -3558,9 +3558,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966450",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519098",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071623",
+    "execution_timestamp": "2026-08-30T19:03:06.618344",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -3590,9 +3590,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966459",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519107",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071629",
+    "execution_timestamp": "2026-08-30T19:03:06.618349",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -3624,9 +3624,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966468",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519115",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071633",
+    "execution_timestamp": "2026-08-30T19:03:06.618353",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -3656,9 +3656,9 @@
     "guardrail_status": "blocked",
     "final_action": "retry_later",
     "guardrail_reason": "contact_opt_out is True",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966472",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519118",
     "execution_status": "blocked_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071636",
+    "execution_timestamp": "2026-08-30T19:03:06.618356",
     "execution_notes": "Blocked by guardrails.",
     "execution_details": {}
   },
@@ -3688,9 +3688,9 @@
     "guardrail_status": "held",
     "final_action": "retry_later",
     "guardrail_reason": "outside business hours (8AM-9PM IST), holding for next window",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966480",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519125",
     "execution_status": "held_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071642",
+    "execution_timestamp": "2026-08-30T19:03:06.618359",
     "execution_notes": "Held by guardrails.",
     "execution_details": {}
   },
@@ -3720,9 +3720,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966483",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519130",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071646",
+    "execution_timestamp": "2026-08-30T19:03:06.618362",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -3754,9 +3754,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966487",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519133",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071654",
+    "execution_timestamp": "2026-08-30T19:03:06.618371",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -3788,9 +3788,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966497",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519139",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071658",
+    "execution_timestamp": "2026-08-30T19:03:06.618374",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -3822,12 +3822,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966506",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071663",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519147",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618378",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -3856,12 +3856,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966513",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071673",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519154",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618383",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -3890,9 +3890,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966517",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519157",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071685",
+    "execution_timestamp": "2026-08-30T19:03:06.618387",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -3924,12 +3924,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966524",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071694",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519163",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618392",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -3958,12 +3958,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966531",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071699",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519171",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.618395",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -3992,9 +3992,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966542",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519201",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071705",
+    "execution_timestamp": "2026-08-30T19:03:06.618399",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -4026,9 +4026,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966549",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519212",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071716",
+    "execution_timestamp": "2026-08-30T19:03:06.618403",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -4060,9 +4060,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966553",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519217",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071723",
+    "execution_timestamp": "2026-08-30T19:03:06.618406",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -4094,12 +4094,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966560",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071731",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519225",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618412",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -4128,12 +4128,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966568",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071737",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519233",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618415",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -4162,9 +4162,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966573",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519239",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071741",
+    "execution_timestamp": "2026-08-30T19:03:06.618418",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -4196,12 +4196,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966581",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071747",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519246",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618422",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -4230,12 +4230,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966588",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071754",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519253",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618427",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -4264,12 +4264,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966595",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071757",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519260",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618431",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -4298,9 +4298,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966604",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519269",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071761",
+    "execution_timestamp": "2026-08-30T19:03:06.618434",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -4332,10 +4332,10 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "discount capped at \u20b95000 max",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966612",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519286",
     "capped_discount_amount": 5000,
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071765",
+    "execution_timestamp": "2026-08-30T19:03:06.618438",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -4367,9 +4367,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966616",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519294",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071769",
+    "execution_timestamp": "2026-08-30T19:03:06.618441",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -4401,9 +4401,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966619",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519299",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071774",
+    "execution_timestamp": "2026-08-30T19:03:06.618447",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -4435,9 +4435,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966626",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519310",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071778",
+    "execution_timestamp": "2026-08-30T19:03:06.618450",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -4469,9 +4469,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966636",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519323",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071784",
+    "execution_timestamp": "2026-08-30T19:03:06.618455",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -4503,9 +4503,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966643",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519331",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071788",
+    "execution_timestamp": "2026-08-30T19:03:06.618459",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -4537,9 +4537,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966647",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519334",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071792",
+    "execution_timestamp": "2026-08-30T19:03:06.618462",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -4571,9 +4571,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966654",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519342",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071795",
+    "execution_timestamp": "2026-08-30T19:03:06.618466",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -4605,10 +4605,10 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "discount capped at \u20b95000 max",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966662",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519349",
     "capped_discount_amount": 5000,
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071801",
+    "execution_timestamp": "2026-08-30T19:03:06.618471",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -4640,12 +4640,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966672",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071804",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519359",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618474",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -4674,9 +4674,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966679",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519366",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071808",
+    "execution_timestamp": "2026-08-30T19:03:06.618478",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -4708,12 +4708,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966687",
-    "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071812",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519373",
+    "execution_status": "failed",
+    "execution_timestamp": "2026-08-30T19:03:06.618481",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge successful"
+      "message": "Charge failed"
     }
   },
   {
@@ -4742,9 +4742,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966694",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519380",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071819",
+    "execution_timestamp": "2026-08-30T19:03:06.618485",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -4776,9 +4776,9 @@
     "guardrail_status": "approved",
     "final_action": "send_reminder",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966701",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519387",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071825",
+    "execution_timestamp": "2026-08-30T19:03:06.618492",
     "execution_notes": "Reminder sent.",
     "execution_details": {
       "message": "Reminder sent via email"
@@ -4810,9 +4810,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966704",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519391",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071828",
+    "execution_timestamp": "2026-08-30T19:03:06.618495",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -4844,9 +4844,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966714",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519402",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071832",
+    "execution_timestamp": "2026-08-30T19:03:06.618499",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -4878,9 +4878,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966717",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519405",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071836",
+    "execution_timestamp": "2026-08-30T19:03:06.618502",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -4912,9 +4912,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966727",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519414",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071842",
+    "execution_timestamp": "2026-08-30T19:03:06.618508",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -4946,9 +4946,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966734",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519421",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071846",
+    "execution_timestamp": "2026-08-30T19:03:06.618511",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -4980,9 +4980,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966744",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519431",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071850",
+    "execution_timestamp": "2026-08-30T19:03:06.618514",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -5014,9 +5014,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966751",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519438",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071854",
+    "execution_timestamp": "2026-08-30T19:03:06.618518",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -5048,12 +5048,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966759",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071857",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519446",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618521",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -5082,9 +5082,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966766",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519454",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071863",
+    "execution_timestamp": "2026-08-30T19:03:06.618526",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -5116,9 +5116,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966774",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519461",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071867",
+    "execution_timestamp": "2026-08-30T19:03:06.618530",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -5150,9 +5150,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966784",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519470",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071870",
+    "execution_timestamp": "2026-08-30T19:03:06.618533",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -5184,12 +5184,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966792",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071874",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519477",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618536",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -5218,9 +5218,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966799",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519484",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071878",
+    "execution_timestamp": "2026-08-30T19:03:06.618540",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -5252,9 +5252,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966806",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519492",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071882",
+    "execution_timestamp": "2026-08-30T19:03:06.618543",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -5286,12 +5286,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966814",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071888",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519500",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618548",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -5320,9 +5320,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966824",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519509",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071892",
+    "execution_timestamp": "2026-08-30T19:03:06.618552",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -5354,9 +5354,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966831",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519516",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071896",
+    "execution_timestamp": "2026-08-30T19:03:06.618555",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -5388,12 +5388,12 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966838",
-    "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071900",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519523",
+    "execution_status": "success",
+    "execution_timestamp": "2026-08-30T19:03:06.618559",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
-      "message": "Charge failed"
+      "message": "Charge successful"
     }
   },
   {
@@ -5422,9 +5422,9 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966845",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519530",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071905",
+    "execution_timestamp": "2026-08-30T19:03:06.618562",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -5456,10 +5456,10 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "discount capped at \u20b95000 max",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966853",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519538",
     "capped_discount_amount": 5000,
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071912",
+    "execution_timestamp": "2026-08-30T19:03:06.618567",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -5491,9 +5491,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_later",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966861",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519548",
     "execution_status": "failed",
-    "execution_timestamp": "2026-08-29T10:19:43.071917",
+    "execution_timestamp": "2026-08-30T19:03:06.618570",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge failed"
@@ -5525,10 +5525,10 @@
     "guardrail_status": "approved",
     "final_action": "offer_discount",
     "guardrail_reason": "discount capped at \u20b95000 max",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966871",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519557",
     "capped_discount_amount": 5000,
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071921",
+    "execution_timestamp": "2026-08-30T19:03:06.618574",
     "execution_notes": "Discount offer generated.",
     "execution_details": {
       "message": "10% discount offer generated and sent"
@@ -5560,9 +5560,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966877",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519561",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071928",
+    "execution_timestamp": "2026-08-30T19:03:06.618579",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -5594,9 +5594,9 @@
     "guardrail_status": "approved",
     "final_action": "escalate_to_human",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966880",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519565",
     "execution_status": "queued_for_human",
-    "execution_timestamp": "2026-08-29T10:19:43.071933",
+    "execution_timestamp": "2026-08-30T19:03:06.618587",
     "execution_notes": "Escalated to human.",
     "execution_details": {
       "message": "Event queued for human review"
@@ -5623,9 +5623,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966887",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519572",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071943",
+    "execution_timestamp": "2026-08-30T19:03:06.618590",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -5652,9 +5652,9 @@
     "guardrail_status": "approved",
     "final_action": "retry_now",
     "guardrail_reason": "no rule triggered",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966891",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519576",
     "execution_status": "success",
-    "execution_timestamp": "2026-08-29T10:19:43.071952",
+    "execution_timestamp": "2026-08-30T19:03:06.618596",
     "execution_notes": "Charge retry attempted.",
     "execution_details": {
       "message": "Charge successful"
@@ -5679,9 +5679,9 @@
     "guardrail_status": "blocked",
     "final_action": "send_reminder",
     "guardrail_reason": "contact_opt_out is True",
-    "guardrail_timestamp": "2026-08-29T10:19:42.966895",
+    "guardrail_timestamp": "2026-08-30T19:03:06.519580",
     "execution_status": "blocked_by_guardrails",
-    "execution_timestamp": "2026-08-29T10:19:43.071958",
+    "execution_timestamp": "2026-08-30T19:03:06.618600",
     "execution_notes": "Blocked by guardrails.",
     "execution_details": {}
   }

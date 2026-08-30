@@ -70,6 +70,7 @@ succeeded** — reminders sent and discounts offered are tracked separately as
 - **Streamlit** — dashboard / working app
 - **Gemini API** (`gemini-flash-lite-latest`) — root cause diagnosis, decision reasoning support, Hinglish script generation, promise-to-pay extraction
 - **gTTS** — Hinglish voice synthesis
+- **Sarvam AI (Bulbul V3)** — primary Hinglish voice synthesis, with **gTTS** as automatic fallback
 - **Razorpay test-mode API** — simulated payment actions
 - **Faker** — synthetic dataset generation
 
@@ -97,8 +98,11 @@ succeeded** — reminders sent and discounts offered are tracked separately as
    GEMINI_API_KEY=your_gemini_api_key
    RAZORPAY_KEY_ID=your_razorpay_test_key_id
    RAZORPAY_KEY_SECRET=your_razorpay_test_key_secret
+   SARVAM_API_KEY=your_sarvam_api_key
    ```
    Get a free Gemini API key at [aistudio.google.com](https://aistudio.google.com/app/apikey).
+
+   Get a free Sarvam AI key (for higher-quality Hinglish voice synthesis) at [dashboard.sarvam.ai](https://dashboard.sarvam.ai) — ₹100 free credits included. If not set, the app automatically falls back to gTTS.
 
 4. **Generate a fresh dataset** (event timestamps are relative to "now," so regenerate before each demo)
    ```bash
@@ -170,6 +174,25 @@ architecture summary.
   build, not a production integration.
 
 ---
+## Future Roadmap (Production Considerations)
+
+This prototype processes events through a synchronous, file-based batch pipeline
+for testing and demo clarity. In a real Razorpay-scale deployment, payment events
+arrive concurrently as webhooks, and a linear batch script would create IO
+bottlenecks and race conditions under load. The production architecture would
+replace the JSON-file handoffs between stages with an asynchronous, distributed
+event stream — e.g. FastAPI background tasks or a Celery worker pool consuming
+from an Apache Kafka / RabbitMQ message broker — so each pipeline stage scales
+independently and events are processed as they arrive rather than in scheduled
+batches.
+
+Other production hardening we'd add beyond hackathon scope:
+- Replace the deprecated `google.generativeai` SDK with `google.genai`
+- Move from JSON files to a proper database (e.g. Postgres) for the audit trail,
+  with row-level locking to handle concurrent writes safely
+- Add retry/backoff and circuit-breaking around all external API calls (Gemini,
+  Sarvam, Razorpay) rather than best-effort try/except
+- Real Razorpay webhook integration in place of the synthetic dataset
 
 ## Status
 

@@ -1,16 +1,40 @@
 import os
 import json
+import base64
 import random
 import google.generativeai as genai
 from gtts import gTTS
+from sarvamai import SarvamAI
 from datetime import datetime
-import os
+from utils.config import SARVAM_API_KEY
 from dotenv import load_dotenv
 load_dotenv()
 
 # Configure Gemini
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 model = genai.GenerativeModel("gemini-flash-lite-latest")
+
+def generate_audio_gtts(script_text, audio_path):
+    tts = gTTS(text=script_text, lang='hi', tld='co.in')
+    tts.save(audio_path)
+
+def generate_audio_sarvam(script_text, audio_path):
+    if len(script_text) > 2000:
+        print("Warning: Script text exceeds 2000 characters, truncating.")
+        script_text = script_text[:2000]
+    
+    client = SarvamAI(api_subscription_key=SARVAM_API_KEY)
+    audio = client.text_to_speech.convert(
+        text=script_text,
+        language_code="hi-IN",
+        model="bulbul:v3",
+        speaker="priya"
+    )
+    # The SDK returns audio content directly as bytes in this example context,
+    # assume audio.audios[0] is the binary data.
+    with open(audio_path, "wb") as f:
+        f.write(base64.b64decode(audio.audios[0]))
+    return True
 
 def format_indian_currency(amount):
     s = str(int(amount))
@@ -117,8 +141,20 @@ def run_voice_recovery():
         
         # Audio
         audio_path = os.path.join(audio_dir, f"{event_id}_agent.mp3")
-        tts = gTTS(text=script, lang='hi', tld='co.in')
-        tts.save(audio_path)
+        
+        if SARVAM_API_KEY:
+            try:
+                generate_audio_sarvam(script, audio_path)
+                print("Audio generated via Sarvam AI")
+                provider_used = "Sarvam AI"
+            except Exception as e:
+                print(f"Sarvam AI TTS failed ({e}), falling back to gTTS")
+                generate_audio_gtts(script, audio_path)
+                provider_used = "gTTS (fallback)"
+        else:
+            print("SARVAM_API_KEY not set, using gTTS")
+            generate_audio_gtts(script, audio_path)
+            provider_used = "gTTS (direct)"
         
         # Customer response
         reply, extraction = simulate_customer_response(script, top_event.get("days_overdue"))
@@ -133,6 +169,7 @@ def run_voice_recovery():
             "recommended_tone": top_event.get("recommended_tone"),
             "agent_script_text": script,
             "agent_audio_path": audio_path,
+            "tts_provider": provider_used,
             "customer_response_text": reply,
             "promise_type": extraction.get("promise_type"),
             "committed_date": extraction.get("committed_date"),

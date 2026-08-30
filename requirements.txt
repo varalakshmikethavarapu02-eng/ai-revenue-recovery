@@ -5,3 +5,4 @@ pandas
 razorpay
 faker
 gtts
+sarvamai

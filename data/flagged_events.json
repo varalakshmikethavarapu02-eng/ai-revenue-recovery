@@ -623,7 +623,7 @@
     "payment_method": "upi",
     "failure_reason": "NPCI_DOWN",
     "retry_count": 1,
-    "priority_score": 35.47,
+    "priority_score": 34.77,
     "contact_opt_out": false,
     "flag_reason": "Always at risk unless resolved",
     "warnings": []
@@ -750,7 +750,7 @@
     "consecutive_failure_number": 1,
     "retry_count": 1,
     "amount": 979,
-    "priority_score": 24.58,
+    "priority_score": 20.78,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -826,7 +826,7 @@
     "consecutive_failure_number": 2,
     "retry_count": 2,
     "amount": 723,
-    "priority_score": 17.71,
+    "priority_score": 5.58,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -864,7 +864,7 @@
     "consecutive_failure_number": 1,
     "retry_count": 1,
     "amount": 410,
-    "priority_score": 31.35,
+    "priority_score": 20.33,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -921,7 +921,7 @@
     "consecutive_failure_number": 2,
     "retry_count": 2,
     "amount": 729,
-    "priority_score": 17.71,
+    "priority_score": 10.58,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -959,7 +959,7 @@
     "consecutive_failure_number": 2,
     "retry_count": 2,
     "amount": 656,
-    "priority_score": 17.66,
+    "priority_score": 10.52,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -1054,7 +1054,7 @@
     "consecutive_failure_number": 2,
     "retry_count": 2,
     "amount": 652,
-    "priority_score": 9.32,
+    "priority_score": 5.52,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -1073,7 +1073,7 @@
     "consecutive_failure_number": 1,
     "retry_count": 1,
     "amount": 114,
-    "priority_score": 22.22,
+    "priority_score": 10.09,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -1149,7 +1149,7 @@
     "consecutive_failure_number": 3,
     "retry_count": 3,
     "amount": 568,
-    "priority_score": 16.47,
+    "priority_score": 5.45,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -1206,7 +1206,7 @@
     "consecutive_failure_number": 1,
     "retry_count": 1,
     "amount": 738,
-    "priority_score": 15.5,
+    "priority_score": 10.59,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -1244,7 +1244,7 @@
     "consecutive_failure_number": 1,
     "retry_count": 1,
     "amount": 539,
-    "priority_score": 16.45,
+    "priority_score": 10.43,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -1320,7 +1320,7 @@
     "consecutive_failure_number": 2,
     "retry_count": 2,
     "amount": 930,
-    "priority_score": 17.88,
+    "priority_score": 10.74,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -1358,7 +1358,7 @@
     "consecutive_failure_number": 3,
     "retry_count": 3,
     "amount": 713,
-    "priority_score": 21.04,
+    "priority_score": 10.57,
     "contact_opt_out": false,
     "flag_reason": "Subscription payment failed",
     "warnings": []
@@ -1700,7 +1700,7 @@
     "previous_reminders_sent": 3,
     "recommended_tone": "formal",
     "amount": 234037,
-    "priority_score": 81.65,
+    "priority_score": 77.75,
     "contact_opt_out": false,
     "flag_reason": "Overdue",
     "warnings": []
@@ -1928,7 +1928,7 @@
     "previous_reminders_sent": 2,
     "recommended_tone": "friendly",
     "amount": 33588,
-    "priority_score": 62.8,
+    "priority_score": 58.91,
     "contact_opt_out": false,
     "flag_reason": "Overdue",
     "warnings": []
@@ -2137,7 +2137,7 @@
     "previous_reminders_sent": 2,
     "recommended_tone": "formal",
     "amount": 33820,
-    "priority_score": 45.85,
+    "priority_score": 41.95,
     "contact_opt_out": false,
     "flag_reason": "Overdue",
     "warnings": []
@@ -2156,7 +2156,7 @@
     "previous_reminders_sent": 0,
     "recommended_tone": "formal",
     "amount": 360074,
-    "priority_score": 61.65,
+    "priority_score": 57.75,
     "contact_opt_out": false,
     "flag_reason": "Overdue",
     "warnings": []
