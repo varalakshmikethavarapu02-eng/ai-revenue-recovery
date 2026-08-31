@@ -5,6 +5,26 @@ import os
 import json
 from datetime import datetime
 
+def format_inr(amount):
+    s = f"{amount:.2f}"
+    whole, decimal = s.split(".")
+    negative = whole.startswith("-")
+    if negative:
+        whole = whole[1:]
+    if len(whole) <= 3:
+        formatted = whole
+    else:
+        last3 = whole[-3:]
+        rest = whole[:-3]
+        parts = []
+        while len(rest) > 2:
+            parts.insert(0, rest[-2:])
+            rest = rest[:-2]
+        if rest:
+            parts.insert(0, rest)
+        formatted = ",".join(parts) + "," + last3
+    return f"{'-' if negative else ''}₹{formatted}.{decimal}"
+
 # Page Config
 st.set_page_config(page_title="AI Revenue Recovery Agent", layout="wide")
 st.title("AI Revenue Recovery Agent")
@@ -104,8 +124,8 @@ recovered = df[(df['effective_action'].isin(['retry_now', 'retry_later'])) &
                (df['execution_status'] == 'success')]['amount'].sum()
 recovery_pct = (recovered / at_risk * 100) if at_risk > 0 else 0
 
-col1.metric("₹ At Risk", f"₹{at_risk:,.2f}")
-col2.metric("₹ Recovered", f"₹{recovered:,.2f}")
+col1.metric("₹ At Risk", format_inr(at_risk))
+col2.metric("₹ Recovered", format_inr(recovered))
 col3.metric("Recovery %", f"{recovery_pct:.1f}%")
 col4.metric("Events Processed", len(df))
 

@@ -152,10 +152,7 @@ succeeded** — reminders sent and discounts offered are tracked separately as
 
 ## Demo
 
-See [`pitch_script.md`](./pitch_script.md) for the full walkthrough script used in
-our demo video, covering: live pipeline run → recovery metrics → guardrails in
-action (opt-out blocking, business-hours holds) → Hinglish voice recovery call →
-architecture summary.
+📺 **[Watch the 5-minute demo video](https://youtu.be/wKOaz-eN4_s?si=GvCpLJqdw43ONFsO)**
 
 ---
 
